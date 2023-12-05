@@ -58,17 +58,7 @@ nav {
   margin: 8px;
 }
 
-.welcome-mobile {
-  display: none;
-}
-
 @media (max-width: 999px) {
-  .welcome-desktop {
-    display: none;
-  }
-  .welcome-mobile {
-    display: flex;
-  }
   .nav-list {
     display: none;
   }
