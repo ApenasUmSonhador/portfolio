@@ -23,19 +23,19 @@ nav a:hover {
   opacity: 0.7;
 }
 
-div {
-  height: 92vh;
-  padding: 20px;
+main div {
+  height: 90vh;
   display: flex;
   flex-direction: column;
   width: 50%;
   text-align: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 main {
   max-width: 100vw;
-  max-height: 100vh;
+  max-height: 92vh;
+  margin-top: 2vh;
   justify-content: space-around;
   display: block;
 }
@@ -45,7 +45,7 @@ p strong {
 }
 
 .texto {
-  margin-top: 90px;
+  padding: 20px;
 }
 
 div > h1 {
@@ -59,10 +59,19 @@ div > h1 {
   max-height: 8vh;
   padding: 3px;
 }
-.profile {
-  width: 50%;
+
+.div-imagem {
   float: right;
+  padding-left: 15px;
+  padding-top: 8px;
 }
+
+.img-dev {
+  padding-left: 3vw;
+  height: 88vh;
+  width: 45vw;
+}
+
 nav {
   background-color: #23232e;
   height: 8vh;
