@@ -5,15 +5,15 @@ var idade = date.getFullYear() - 2003;
 var mes = date.getMonth();
 var dia = date.getDay();
 if (hour < 12) {
-    saudacao = "Bom dia";
+    saudacao = "Bom dia!";
 }
 
 else if (hour < 18) {
-    saudacao = "Boa tarde";
+    saudacao = "Boa tarde!";
 }
 
 else {
-    saudacao = "Boa noite";
+    saudacao = "Boa noite!";
 }
 if ((mes < 10) || (mes == 10 && dia < 24)) {
     idade--

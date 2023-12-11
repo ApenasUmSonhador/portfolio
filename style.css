@@ -61,15 +61,15 @@ div > h1 {
 }
 
 .div-imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   float: right;
-  padding-left: 15px;
-  padding-top: 8px;
 }
 
 .img-dev {
   padding-left: 3vw;
-  height: 88vh;
-  width: 45vw;
+  width: 40vw;
 }
 
 nav {
