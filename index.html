@@ -1,56 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio - Arthur Nunes</title>
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <a href="#"><img src="assets/logo.png" class="logo" alt="logo" /></a>
-        <div class="mobile-menu">
-          <div class="line-1"></div>
-          <div class="line-2"></div>
-          <div class="line-3"></div>
-        </div>
-        <ul class="nav-list">
-          <li><a id="pag-atual" href="#inicio">Início</a></li>
-          <li><a id="pag-atual" href="#sobre">Sobre</a></li>
-          <li><a id="pag-atual" href="#projetos">Projetos</a></li>
-          <li><a id="pag-atual" href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arthur Nunes - Portfólio </title>
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <a name="inicio"></a>
-    <main>
-      <div class="div-imagem">
-        <img
-          src="assets/foto-perfil.jpeg"
-          class="img-dev"
-          alt="desenho do Desenvolvedor"
-        />
+<body>
+  <header>
+    <nav>
+      <img src="assets/logo.png" class="logo" alt="logo" />
+      <div class="mobile-menu">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
       </div>
-      <div>
-        <p>Portfólio</p>
-        <h1>Arthur</h1>
-        <h1>Nunes</h1>
-        <p>Desenvolvedor</p>
-        <p class="texto">
-          <span id="saudacao"></span>Meu nome é
-          <strong>Arthur Vinicius Carneiro Nunes</strong>, tenho
+      <ul class="nav-list">
+        <li><a href="#inicio" class="scroll-link">Início</a></li>
+        <li><a href="#sobre" class="scroll-link">Sobre</a></li>
+        <li><a href="#carreira" class="scroll-link">Carreira</a></li>
+        <li><a href="#contato" class="scroll-link">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <a id="inicio"></a>
+    <div class="div-imagem">
+      <img src="assets/foto-perfil.jpeg" class="img-perfil" alt="Desenho de Arthur Nunes" />
+    </div>
+    <div>
+      <h3>Portfólio</h3>
+      <h1>Arthur<br />Nunes</h1>
+      <h3>Desenvolvedor</h3>
+      <p class="texto-apresentacao">
+        <span id="saudacao"></span> Meu nome é
+          Arthur Vinicius Carneiro Nunes, tenho
           <span id="idade"></span> anos e sou estudante do curso de bacharelado
           em Ciência da Computação na Universidade Federal do Ceará (UFC).
-        </p>
-      </div>
-    </main>
+      </p>
+      <p class="texto-apresentacao">
+        Este portfólio é o reflexo do meu compromisso irrefutável com a
+        qualidade e a confiabilidade em todos os projetos em que me envolvo.
+      </p>
+    </div>
+  </main>
+  <a id="sobre"></a>
+  <div class="linha"></div>
+  <section class="Sobre">
+    <div>
+      <img src="assets/Collab-bro.png" alt="Imagem de lampada sendo desenhada por diversas mãos" />
+    </div>
+    <div class="direita">
+      <h2>Sobre</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iure in sequi reprehenderit saepe fugit voluptatem cupiditate enim? Rem possimus ipsa facere corrupti sit maiores quia deserunt quidem sapiente dolorum?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati magni corporis voluptatibus at dolore repellendus officia veritatis amet dolor impedit quisquam, eligendi perspiciatis architecto pariatur aspernatur nemo a cupiditate.
+      </p>
+    </div>
+  </section>
 
-    <footer></footer>
-    <script src="scr/mobile-nav.js"></script>
-    <script src="scr/data.js"></script>
-  </body>
+  <footer>
+    <p>&copy; 2024 Arthur Nunes. Todos os direitos reservados.</p>
+  </footer>
+  <script src="scr/scroll.js"></script>
+  <script src="scr/mobile-nav.js"></script>
+  <script src="scr/data.js"></script>
+</body>
+
 </html>

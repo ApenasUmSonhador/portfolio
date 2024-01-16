@@ -8,68 +8,12 @@
   text-decoration: none;
 }
 
-body {
-  background-color: #0d1117;
-  color: #ffff;
-  font-family: "Fira Code", monospace;
-}
-
-nav a {
-  color: #ffff;
-  text-decoration: none;
-}
-
-nav a:hover {
-  opacity: 0.7;
-}
-
-main div {
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  text-align: center;
-  justify-content: space-around;
-}
-
-main {
-  max-width: 100vw;
-  max-height: 92vh;
-  margin-top: 2vh;
-  justify-content: space-around;
-  display: block;
-}
-
-p strong {
-  color: #ffd700;
-}
-
-.texto {
-  padding: 20px;
-}
-
-div > h1 {
-  font-family: "Alice", monospace;
-  font-weight: 100;
-  font-size: 100px;
-}
-
-.logo {
-  margin-top: 4px;
-  max-height: 8vh;
-  padding: 3px;
-}
-
-.div-imagem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  float: right;
-}
-
-.img-dev {
-  padding-left: 3vw;
-  width: 40vw;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 nav {
@@ -79,6 +23,12 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.logo {
+  margin-top: 4px;
+  max-height: 8vh;
+  padding: 3px;
 }
 
 .nav-list {
@@ -103,16 +53,124 @@ nav {
   margin: 8px;
 }
 
-@media (max-width: 999px) {
-  .nav-list {
-    display: none;
-  }
+nav a {
+  color: #ffff;
+  transition: opacity 0.3s ease-in-out;
+}
 
+nav a:hover {
+  opacity: 0.7;
+}
+
+body {
+  background-color: #0d1117;
+  color: #ffff;
+  font-family: "Fira Code", monospace;
+}
+
+main {
+  max-width: 100vw;
+  margin-top: 30px;
+}
+
+main div {
+  padding-top: 90px;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+h3 {
+  font-weight: 100;
+  text-align: center;
+}
+
+.texto-apresentacao {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+div > h1 {
+  text-align: center;
+  font-family: "Alice", monospace;
+  font-weight: 100;
+  font-size: 100px;
+}
+
+.linha {
+  margin: 3% auto;
+  height: 1px;
+  width: 94%;
+  border-bottom: 1px solid #23232e;
+}
+
+.div-imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+
+.img-perfil {
+  background-color: #23232e;
+  border-radius: 20vw;
+  padding-right: 3vw;
+  width: 40vw;
+  height: 40vw;
+}
+
+.Sobre {
+  max-width: 100vw;
+  max-height: 85vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.Sobre div {
+  flex-basis: calc(50% - 20px);
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.Sobre img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.Sobre p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.direita {
+  padding-right: 3vw;
+  width: 50vw;
+  height: fit-content;
+}
+
+footer {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 999px) {
   body {
     overflow-x: hidden;
   }
 
   .nav-list {
+    display: none;
     position: absolute;
     top: 8vh;
     right: 0;
