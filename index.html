@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>Portfólio</title>
+    <link rel="stylesheet" href="style/header-footer.css" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <title>Portfólio - Home</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Sobre mim</a>
+        <a href="cv.html">Currículo</a>
+      </nav>
+    </header>
     <main>
       <section>
         <h1>
@@ -22,16 +29,22 @@
           Vamos conversar?
         </p>
         <div>
+          <h2>Acesse minhas redes:</h2>
           <a href="https://www.linkedin.com/in/arthurvininunes/" target="_blank"
-            >Linkedin</a
-          >
+            >
+            <img src="assets/linkedin.png" alt="">
+            Linkedin
+          </a>
           <a href="https://github.com/ApenasUmSonhador" target="_blank"
-            >GitHub</a
-          >
+            ><img src="assets/github.png" alt="">
+            GitHub
+          </a>
         </div>
       </section>
-      <img src="foto-perfil.jpeg" alt="Desenho do rosto de Arthur Nunes" />
+      <img class="foto-de-perfil" src="assets/foto-perfil.jpeg" alt="Desenho do rosto de Arthur Nunes" />
     </main>
-    <footer></footer>
+    <footer>
+      <p>&copy; 2024 Arthur Nunes. Todos os direitos reservados.</p>
+    </footer>
   </body>
 </html>
