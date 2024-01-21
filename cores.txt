@@ -1,4 +1,0 @@
-cinza = #23232e
-roxo = #533549
-branco = #ffff
-amarelo = #ffd700
