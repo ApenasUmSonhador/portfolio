@@ -49,6 +49,11 @@ div > a {
   font-family: "Montserrat", sans-serif;
 }
 
+p a {
+  color: var(--cor-primaria);
+  text-decoration: underline;
+}
+
 .foto-de-perfil {
   width: 50%;
   border-radius: 16px;
