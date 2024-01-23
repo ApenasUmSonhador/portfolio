@@ -2,7 +2,7 @@
 
 Este é o meu projeto de portfólio, onde apresento meu trabalho e habilidades como desenvolvedor.
 
-![Imagem da Home](assets/image.png)
+![Imagem da Home page](image.png)
 
 ## Visão Geral
 
