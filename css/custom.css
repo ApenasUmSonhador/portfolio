@@ -1,8 +1,27 @@
 /* ==========================
-   VARIÁVEIS DE TEMA
+   VARIÁVEIS GERAIS
 ========================== */
 
 :root {
+  /* Espaçamento */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+
+  /* Tipografia */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+
+  /* Shadow */
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.25);
+
   --bg: #000000;
   --text: #f6f6f6;
   --text-muted: #cfcfcf;
@@ -127,15 +146,26 @@ section > .container > p {
 }
 
 /* ==========================
-   CARDS
+   COMPONENTES BASE
 ========================== */
 
 .card {
   background-color: var(--card);
-  border: 1px solid var(--card-border);
-  border-radius: 16px;
-  box-shadow: var(--card-shadow);
-  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Badge base */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  padding: 0.35em 0.6em;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
 }
 
 .card h5 {
@@ -180,6 +210,79 @@ section > .container > p {
 .project-card:hover .project-image img {
   transform: scale(1.05);
   opacity: 1;
+}
+
+/* ==========================
+   BADGES DE PROJETOS
+========================== */
+
+.project-card .badge {
+  font-weight: 500;
+  padding: 0.4em 0.6em;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  letter-spacing: 0.3px;
+}
+
+/* ----- Categorias ----- */
+
+.badge-frontend {
+  background-color: #0d6efd; /* Azul */
+  color: #ffffff;
+}
+
+.badge-backend {
+  background-color: #198754; /* Verde */
+  color: #ffffff;
+}
+
+.badge-database {
+  background-color: #6f42c1; /* Roxo */
+  color: #ffffff;
+}
+
+.badge-auth {
+  background-color: #d63384; /* Rosa escuro */
+  color: #ffffff;
+}
+
+/* ----- Tecnologias ----- */
+
+.badge-react {
+  background-color: #20232a;
+  color: #61dafb;
+}
+
+.badge-ts {
+  background-color: #3178c6;
+  color: #ffffff;
+}
+
+.badge-node {
+  background-color: #3c873a;
+  color: #ffffff;
+}
+
+.badge-prisma {
+  background-color: #0c344b;
+  color: #ffffff;
+}
+
+.badge-postgres {
+  background-color: #336791;
+  color: #ffffff;
+}
+
+.badge-jwt {
+  background-color: #000000;
+  color: #ffd700;
+  border: 1px solid rgba(255, 215, 0, 0.4);
+}
+
+/* ----- Light mode ajustes ----- */
+
+body.light .project-card .badge {
+  opacity: 0.9;
 }
 
 /* ==========================

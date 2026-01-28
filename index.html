@@ -149,55 +149,69 @@
       Alguns projetos que demonstram minhas habilidades na prática.
     </p>
 
+    <div class="d-flex flex-wrap justify-content-center gap-2 mb-4 fade-up">
+      <button class="btn btn-outline-gold btn-sm filter-btn active" data-filter="all">
+        Todos
+      </button>
+      <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="frontend">
+        Frontend
+      </button>
+      <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="backend">
+        Backend
+      </button>
+      <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="database">
+        Database
+      </button>
+    </div>
+
     <div class="row g-4">
 
       <!-- PROJETO To-Do List Fullstack -->
-      <div class="col-12 col-md-6 col-lg-4 fade-up">
-        <div class="card project-card h-100">
-
-          <div class="project-image">
-        <img 
-          src="assets/foto-perfil.jpeg"
-          alt="Preview do projeto To-Do List"
-        >
-          </div>
-
-          <div class="p-3 d-flex flex-column h-100">
-        <h5 class="text-gold">To-Do List Fullstack</h5>
-        <p>
-          Aplicação completa com React, Material UI e TypeScript no frontend, 
-          Node.js, Express, Prisma e PostgreSQL no backend. Inclui autenticação JWT.
-        </p>
-
-        <div class="mt-auto d-flex gap-2">
-          <a class="btn btn-outline-gold btn-sm disabled">Demo</a>
-          <a class="btn btn-outline-gold btn-sm" href="https://github.com/ApenasUmSonhador/React-Node.js-to-do-list" target="_blank">GitHub</a>
-        </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- PROJETO Backend -->
-      <div class="col-12 col-md-6 col-lg-4 fade-up">
+      <div 
+        class="col-12 col-md-6 col-lg-4 fade-up project-item"
+        data-category="frontend backend database auth"
+      >
         <div class="card project-card h-100">
 
           <div class="project-image">
             <img 
               src="assets/foto-perfil.jpeg"
-              alt="Preview do projeto Backend"
+              alt="Preview do projeto To-Do List"
             >
           </div>
 
           <div class="p-3 d-flex flex-column h-100">
-            <h5 class="text-gold">Projeto Backend</h5>
+            <h5 class="text-gold">To-Do List Fullstack</h5>
+
+            <!-- TAGS -->
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge badge-frontend">Frontend</span>
+              <span class="badge badge-backend">Backend</span>
+              <span class="badge badge-database">Database</span>
+              <span class="badge badge-auth">Auth</span>
+
+              <span class="badge badge-react">React</span>
+              <span class="badge badge-ts">TypeScript</span>
+              <span class="badge badge-node">Node.js</span>
+              <span class="badge badge-prisma">Prisma</span>
+              <span class="badge badge-postgres">PostgreSQL</span>
+              <span class="badge badge-jwt">JWT</span>
+            </div>
+
             <p>
-              API REST com foco em escalabilidade, boas práticas e organização de código.
+              Aplicação completa com React, Material UI e TypeScript no frontend, 
+              Node.js, Express, Prisma e PostgreSQL no backend, incluindo autenticação JWT.
             </p>
 
             <div class="mt-auto d-flex gap-2">
               <a class="btn btn-outline-gold btn-sm disabled">Demo</a>
-              <a class="btn btn-outline-gold btn-sm disabled">GitHub</a>
+              <a 
+                class="btn btn-outline-gold btn-sm"
+                href="https://github.com/ApenasUmSonhador/React-Node.js-to-do-list"
+                target="_blank"
+              >
+                GitHub
+              </a>
             </div>
           </div>
 
@@ -282,6 +296,34 @@ document.addEventListener("DOMContentLoaded", () => {
     const isLight = body.classList.contains("light");
     toggleBtn.textContent = isLight ? "☀️" : "🌙";
     localStorage.setItem("theme", isLight ? "light" : "dark");
+  });
+
+});
+
+/* ===== FILTRO DE PROJETOS ===== */
+document.addEventListener("DOMContentLoaded", () => {
+
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const projects = document.querySelectorAll(".project-item");
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const filter = btn.dataset.filter;
+
+      // Estado ativo
+      filterButtons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      projects.forEach(project => {
+        const categories = project.dataset.category.split(" ");
+
+        if (filter === "all" || categories.includes(filter)) {
+          project.style.display = "block";
+        } else {
+          project.style.display = "none";
+        }
+      });
+    });
   });
 
 });
