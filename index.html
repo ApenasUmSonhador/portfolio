@@ -150,7 +150,7 @@
     </p>
 
     <div class="d-flex flex-wrap justify-content-center gap-2 mb-4 fade-up">
-      <button class="btn btn-outline-gold btn-sm filter-btn active" data-filter="all">
+      <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="all">
         Todos
       </button>
       <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="frontend">
@@ -306,23 +306,45 @@ document.addEventListener("DOMContentLoaded", () => {
   const filterButtons = document.querySelectorAll(".filter-btn");
   const projects = document.querySelectorAll(".project-item");
 
+  let activeFilters = new Set();
+
+  function applyFilters() {
+    projects.forEach(project => {
+      const categories = project.dataset.category.split(" ");
+      const matches =
+        activeFilters.size === 0 ||
+        [...activeFilters].every(f => categories.includes(f));
+
+      if (matches) {
+        project.classList.remove("is-hidden");
+      } else {
+        project.classList.add("is-hidden");
+      }
+    });
+  }
+
   filterButtons.forEach(btn => {
     btn.addEventListener("click", () => {
       const filter = btn.dataset.filter;
 
-      // Estado ativo
-      filterButtons.forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
+      // Reset geral
+      if (filter === "all") {
+        activeFilters.clear();
+        filterButtons.forEach(b => b.classList.remove("active"));
+        applyFilters();
+        return;
+      }
 
-      projects.forEach(project => {
-        const categories = project.dataset.category.split(" ");
+      // Toggle do filtro
+      if (activeFilters.has(filter)) {
+        activeFilters.delete(filter);
+        btn.classList.remove("active");
+      } else {
+        activeFilters.add(filter);
+        btn.classList.add("active");
+      }
 
-        if (filter === "all" || categories.includes(filter)) {
-          project.style.display = "block";
-        } else {
-          project.style.display = "none";
-        }
-      });
+      applyFilters();
     });
   });
 
