@@ -25,7 +25,7 @@
   --bg: #000000;
   --text: #f6f6f6;
   --text-muted: #cfcfcf;
-  --gold: #ffd700;
+  --accent: #ffd700; /* cor principal */
 
   --card: #141414;
   --card-border: rgba(255, 215, 0, 0.15);
@@ -38,6 +38,7 @@ body.light {
   --bg: #ffffff;
   --text: #111111;
   --text-muted: #444444;
+  --accent: #c99700; /* Amarelo mais legível em tema claro */
 
   --card: #fafafa;
   --card-border: rgba(0, 0, 0, 0.1);
@@ -59,7 +60,7 @@ body {
 
 /* Texto de destaque */
 .text-gold {
-  color: var(--gold);
+  color: var(--accent);
 }
 
 p {
@@ -80,7 +81,7 @@ section > .container > p {
 }
 
 /* ==========================
-   NAVBAR
+   NAVBAR — ISOLADA DO BOOTSTRAP
 ========================== */
 
 .navbar {
@@ -88,18 +89,46 @@ section > .container > p {
   border-bottom: 1px solid var(--border);
 }
 
-.navbar-brand {
-  font-family: "Krona One", sans-serif;
-  font-size: 1.4rem;
+/* Força texto visível SEM depender de navbar-dark/light */
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: var(--text) !important;
 }
 
-/* Links da navbar adaptáveis */
-.nav-link {
-  color: var(--text);
+/* Hover */
+.navbar .nav-link:hover {
+  color: var(--accent) !important;
 }
 
-.nav-link:hover {
-  color: var(--gold);
+/* Botão hamburguer */
+.navbar-toggler {
+  border-color: var(--border);
+}
+
+/* Ícone hamburguer (SVG do Bootstrap) */
+.navbar-toggler-icon {
+  background-image: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon span {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: var(--text);
+  margin: 6px 0;
+  transition: background-color 0.3s ease;
+}
+
+/* Light mode — ícone escuro */
+body.light .navbar-toggler-icon::before,
+body.light .navbar-toggler-icon::after,
+body.light .navbar-toggler-icon span {
+  background-color: var(--text);
 }
 
 /* ==========================
@@ -125,13 +154,13 @@ section > .container > p {
 ========================== */
 
 .btn-outline-gold {
-  color: var(--gold);
-  border: 2px solid var(--gold);
+  color: var(--accent);
+  border: 2px solid var(--accent);
   background-color: transparent;
 }
 
 .btn-outline-gold:hover {
-  background-color: var(--gold);
+  background-color: var(--accent);
   color: var(--bg);
 }
 
@@ -142,7 +171,7 @@ section > .container > p {
 .hero-image {
   max-width: 380px;
   border-radius: 20px;
-  border: 3px solid var(--gold);
+  border: 3px solid var(--accent);
 }
 
 /* ==========================
@@ -290,7 +319,7 @@ body.light .project-card .badge {
 ========================== */
 
 .footer {
-  background-color: var(--gold);
+  background-color: var(--accent);
   color: #000000;
   padding: 20px 0;
   margin-top: 60px;
@@ -348,6 +377,6 @@ body,
 
 /* Botão ativo de filtro */
 .filter-btn.active {
-  background-color: var(--gold);
+  background-color: var(--accent);
   color: var(--bg);
 }
