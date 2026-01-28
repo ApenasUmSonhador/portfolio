@@ -1,50 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/header-footer.css" />
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-    <title>Portfólio - Home</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">Sobre mim</a>
-        <a href="https://docs.google.com/document/d/1iFbsFdSpxb3GoZ2gmL0Iv14Z0dz_1vMezDsFj870i80/edit" target="_blank">Currículo</a>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h1>
-          Eleve seu negócio digital a outro nível
-          <strong>com um Full Stack de qualidade!</strong>
-        </h1>
-        <p>
-          Olá! Sou Arthur Nunes, desenvolvedor Full Stack com especialidade em
-          C++, Java, Python, HTML e CSS. Ajudo empresas a transformar sonhos em código.
-          Vamos conversar?
-        </p>
-        <div>
-          <h2>Acesse minhas redes:</h2>
-          <a href="https://www.linkedin.com/in/arthurvininunes/" target="_blank"
-            >
-            <img class="icone" src="assets/linkedIn-icon.png" alt="">
-            Linkedin
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Arthur Nunes | Full Stack Developer</title>
+
+  <!-- Bootstrap 5 -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS customizado -->
+  <link rel="stylesheet" href="css/custom.css">
+
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold fade-up" href="#">
+      Arthur Nunes<span class="text-gold">.</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-4">
+        <li class="nav-item"><a class="nav-link fade-up" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link fade-up" href="#">Sobre</a></li>
+        <li class="nav-item">
+          <a class="nav-link fade-up" target="_blank"
+             href="https://apenasumsonhador.github.io/Curriculum-Vitae/">
+            Currículo
           </a>
-          <a href="https://github.com/ApenasUmSonhador" target="_blank"
-            ><img class="icone" src="assets/github-icon.png" alt="">
+        </li>
+      </ul>
+    </div>
+
+    <button 
+      id="themeToggle"
+      class="btn btn-sm btn-outline-gold ms-lg-3 fade-up"
+      aria-label="Alternar tema"
+    >
+      🌙
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+
+      <!-- TEXTO -->
+      <div class="col-12 col-lg-6 text-center text-lg-start">
+        <h1 class="hero-title fade-up">
+          Transformando ideias em
+          <span class="text-gold">soluções digitais</span>
+        </h1>
+
+        <p class="hero-text mt-4 fade-up">
+          Olá! Sou <strong>Arthur Nunes</strong>, Desenvolvedor <strong>Full Stack</strong> 
+          com experiência em construir aplicações modernas, escaláveis e eficientes.
+        </p>
+
+        <div class="d-flex flex-column flex-sm-row gap-3 mt-4 justify-content-center justify-content-lg-start fade-up">
+          <a class="btn btn-outline-gold btn-lg" target="_blank"
+             href="https://www.linkedin.com/in/arthurvininunes/">
+            LinkedIn
+          </a>
+          <a class="btn btn-outline-gold btn-lg" target="_blank"
+             href="https://github.com/ApenasUmSonhador">
             GitHub
           </a>
         </div>
-      </section>
-      <img class="foto-de-perfil" src="assets/foto-perfil.jpeg" alt="Desenho do rosto de Arthur Nunes" />
-    </main>
-    <footer>
-      <p>&copy; 2024 Arthur Nunes. Todos os direitos reservados.</p>
-    </footer>
-  </body>
+      </div>
+
+      <!-- IMAGEM -->
+      <div class="col-12 col-lg-6 text-center fade-up">
+        <img 
+          src="assets/foto-perfil.jpeg" 
+          alt="Arthur Nunes"
+          class="img-fluid hero-image"
+        >
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer text-center fade-up">
+  <div class="container">
+    <p class="mb-0">
+      © 2024 Arthur Nunes • Full Stack Developer
+    </p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- SCRIPTS FUNCIONAIS -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  /* ===== ANIMAÇÕES ===== */
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
+
+  /* ===== DARK / LIGHT MODE ===== */
+  const toggleBtn = document.getElementById("themeToggle");
+  const body = document.body;
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "light") {
+    body.classList.add("light");
+    toggleBtn.textContent = "☀️";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    body.classList.toggle("light");
+
+    const isLight = body.classList.contains("light");
+    toggleBtn.textContent = isLight ? "☀️" : "🌙";
+    localStorage.setItem("theme", isLight ? "light" : "dark");
+  });
+
+});
+</script>
+
+</body>
 </html>
