@@ -26,7 +26,7 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand fw-bold fade-up" href="#">
+    <a class="navbar-brand fw-bold fade-up" href="#home">
       Arthur Nunes<span class="text-gold">.</span>
     </a>
 
@@ -36,8 +36,10 @@
 
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-4">
-        <li class="nav-item"><a class="nav-link fade-up" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link fade-up" href="#">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link fade-up" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link fade-up" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link fade-up" href="#projects">Projetos</a></li>
+        <li class="nav-item"><a class="nav-link fade-up" href="#about">Sobre</a></li>
         <li class="nav-item">
           <a class="nav-link fade-up" target="_blank"
              href="https://apenasumsonhador.github.io/Curriculum-Vitae/">
@@ -58,7 +60,7 @@
 </nav>
 
 <!-- HERO -->
-<section class="hero d-flex align-items-center">
+<section id="home" class="hero d-flex align-items-center">
   <div class="container">
     <div class="row align-items-center gy-5">
 
@@ -99,12 +101,149 @@
   </div>
 </section>
 
+<!-- SKILLS -->
+<section id="skills" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 fade-up">Skills</h2>
+    <p class="text-center mb-5 fade-up">
+      Tecnologias que utilizo para desenvolver soluções completas.
+    </p>
+
+    <div class="row g-4">
+      <div class="col-6 col-md-3 fade-up">
+        <div class="card h-100 text-center p-3">
+          <h5 class="text-gold">Frontend</h5>
+          <p>HTML • CSS • Bootstrap • React</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 fade-up">
+        <div class="card h-100 text-center p-3">
+          <h5 class="text-gold">Backend</h5>
+          <p>Node.js • Java • Python</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 fade-up">
+        <div class="card h-100 text-center p-3">
+          <h5 class="text-gold">Database</h5>
+          <p>PostgreSQL • MySQL</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 fade-up">
+        <div class="card h-100 text-center p-3">
+          <h5 class="text-gold">Tools</h5>
+          <p>Git • Docker • Linux</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJETOS -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 fade-up">Projetos</h2>
+    <p class="text-center mb-5 fade-up">
+      Alguns projetos que demonstram minhas habilidades na prática.
+    </p>
+
+    <div class="row g-4">
+
+      <!-- PROJETO To-Do List Fullstack -->
+      <div class="col-12 col-md-6 col-lg-4 fade-up">
+        <div class="card project-card h-100">
+
+          <div class="project-image">
+        <img 
+          src="assets/foto-perfil.jpeg"
+          alt="Preview do projeto To-Do List"
+        >
+          </div>
+
+          <div class="p-3 d-flex flex-column h-100">
+        <h5 class="text-gold">To-Do List Fullstack</h5>
+        <p>
+          Aplicação completa com React, Material UI e TypeScript no frontend, 
+          Node.js, Express, Prisma e PostgreSQL no backend. Inclui autenticação JWT.
+        </p>
+
+        <div class="mt-auto d-flex gap-2">
+          <a class="btn btn-outline-gold btn-sm disabled">Demo</a>
+          <a class="btn btn-outline-gold btn-sm" href="https://github.com/ApenasUmSonhador/React-Node.js-to-do-list" target="_blank">GitHub</a>
+        </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PROJETO Backend -->
+      <div class="col-12 col-md-6 col-lg-4 fade-up">
+        <div class="card project-card h-100">
+
+          <div class="project-image">
+            <img 
+              src="assets/foto-perfil.jpeg"
+              alt="Preview do projeto Backend"
+            >
+          </div>
+
+          <div class="p-3 d-flex flex-column h-100">
+            <h5 class="text-gold">Projeto Backend</h5>
+            <p>
+              API REST com foco em escalabilidade, boas práticas e organização de código.
+            </p>
+
+            <div class="mt-auto d-flex gap-2">
+              <a class="btn btn-outline-gold btn-sm disabled">Demo</a>
+              <a class="btn btn-outline-gold btn-sm disabled">GitHub</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+
+      <div class="col-12 col-lg-6 fade-up">
+        <h2>Sobre mim</h2>
+        <p class="mt-3">
+          Sou Desenvolvedor Full Stack com interesse em criar soluções que resolvem
+          problemas reais. Tenho foco em aprendizado contínuo, código limpo e boas práticas.
+        </p>
+        <p>
+          Busco oportunidades onde eu possa crescer tecnicamente e contribuir
+          com projetos desafiadores.
+        </p>
+      </div>
+
+      <div class="col-12 col-lg-6 fade-up">
+        <div class="card p-4">
+          <h5 class="text-gold">Interesses</h5>
+          <p class="mb-0">
+            Desenvolvimento Web • Arquitetura de Software • Tecnologia • Aprendizado contínuo
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer class="footer text-center fade-up">
   <div class="container">
-    <p class="mb-0">
-      © 2024 Arthur Nunes • Full Stack Developer
-    </p>
+    <span class="mb-0">
+      © 2026 Arthur Nunes • Full Stack Developer
+    </span>
   </div>
 </footer>
 
