@@ -308,6 +308,26 @@ body.light .navbar-toggler-icon span {
   border: 1px solid rgba(255, 215, 0, 0.4);
 }
 
+.badge-html {
+  background-color: #e34c26;
+  color: #ffffff;
+}
+
+.badge-css {
+  background-color: #563d7c;
+  color: #ffffff;
+}
+
+.badge-js {
+  background-color: #f7df1e;
+  color: #000000;
+}
+
+.badge-bootstrap {
+  background-color: #7952b3;
+  color: #ffffff;
+}
+
 /* ----- Light mode ajustes ----- */
 
 body.light .project-card .badge {
