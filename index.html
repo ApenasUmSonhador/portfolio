@@ -217,11 +217,86 @@
               >
                 GitHub
               </a>
+              <button class="btn btn-outline-gold btn-sm" data-bs-toggle="modal" data-bs-target="#caseTodo">
+                Ver case
+              </button>              
             </div>
           </div>
-
         </div>
       </div>
+
+      <!-- Modal To-Do List Full Stack -->
+      <div class="modal fade" id="caseTodo" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-gold">To-Do List Full Stack — Case</h5>
+            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <!-- === Texto === -->
+          <div class="modal-body">
+
+            <h6>Problema</h6>
+            <p>
+              Aplicações simples de gerenciamento de tarefas geralmente não oferecem
+              autenticação segura, persistência de dados confiável ou separação clara
+              entre frontend e backend, dificultando a escalabilidade e manutenção
+              do sistema à medida que ele cresce.
+            </p>
+
+            <h6>🛠️ Solução</h6>
+            <p>
+              Foi desenvolvida uma aplicação <strong>Full Stack</strong> com frontend
+              desacoplado e backend em forma de <strong>API REST</strong>, permitindo
+              autenticação de usuários, gerenciamento completo de tarefas (CRUD)
+              e persistência segura dos dados.
+            </p>
+
+            <p>
+              O frontend atua como uma <strong>SPA</strong>, consumindo a API via Axios,
+              enquanto o backend centraliza regras de negócio, autenticação e acesso
+              ao banco de dados.
+            </p>
+
+            <h6>🧠 Decisões Técnicas</h6>
+            <ul>
+              <li>
+                <strong>TypeScript</strong> em toda a aplicação para maior segurança,
+                legibilidade e redução de erros em tempo de desenvolvimento.
+              </li>
+              <li>
+                <strong>JWT</strong> para autenticação stateless, facilitando escalabilidade
+                e integração futura com outros clientes.
+              </li>
+              <li>
+                <strong>Prisma ORM</strong> para modelagem e acesso ao banco de dados,
+                garantindo tipagem forte e migrações controladas.
+              </li>
+              <li>
+                <strong>Separação clara de responsabilidades</strong> entre frontend e backend,
+                seguindo boas práticas de arquitetura.
+              </li>
+            </ul>
+
+            <h6>📈 Resultado</h6>
+            <p>
+              O projeto resultou em uma aplicação funcional, segura e extensível,
+              servindo como base sólida para futuras evoluções, como permissões por usuário,
+              novos tipos de tarefas ou integração com outros serviços.
+            </p>
+
+            <h6>🚧 Próximos Passos</h6>
+            <p>
+              Implementação de permissões, testes automatizados,
+              cache de requisições e deploy com Docker.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
 
       <!-- Portfolio Frontend -->
       <div 
@@ -270,11 +345,84 @@
               >
                 GitHub
               </a>
+
+              <button class="btn btn-outline-gold btn-sm" data-bs-toggle="modal" data-bs-target="#casePortfolio">
+                Ver case
+              </button>
             </div>
           </div>
 
         </div>
       </div>
+
+      <!-- Modal Portfolio Frontend -->
+      <div class="modal fade" id="casePortfolio" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-gold">Portfólio Profissional — Case</h5>
+            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <!-- === Texto === -->
+          <div class="modal-body">
+
+            <h6>Problema</h6>
+            <p>
+              Muitos portfólios de desenvolvedores apresentam apenas informações estáticas,
+              com pouca preocupação em experiência do usuário, acessibilidade, organização
+              do conteúdo ou reutilização de componentes, o que dificulta transmitir
+              maturidade técnica e identidade profissional.
+            </p>
+
+            <h6>🛠️ Solução</h6>
+            <p>
+              Foi desenvolvido um <strong>portfólio profissional responsivo</strong>,
+              pensado como um produto, com foco em clareza, legibilidade e experiência
+              consistente em diferentes dispositivos.
+            </p>
+
+            <p>
+              A aplicação adota uma abordagem <strong>mobile-first</strong>, integra
+              <strong>modo claro e escuro</strong>, animações sutis e uma estrutura
+              modular que facilita manutenção e evolução futura.
+            </p>
+
+            <h6>🧠 Decisões Técnicas</h6>
+            <ul>
+              <li>
+                Uso de <strong>Bootstrap 5</strong> para garantir responsividade,
+                consistência visual e produtividade no layout.
+              </li>
+              <li>
+                Criação de um <strong>design system baseado em variáveis CSS</strong>,
+                permitindo alternância de tema (dark/light) sem duplicação de estilos.
+              </li>
+              <li>
+                Animações suaves com <strong>CSS e JavaScript</strong> para melhorar
+                a percepção de qualidade sem comprometer performance.
+              </li>
+              <li>
+                Estrutura sem dependência de frameworks pesados, priorizando
+                <strong>performance, simplicidade e controle total do código</strong>.
+              </li>
+            </ul>
+
+            <h6>📈 Resultado</h6>
+            <p>
+              O resultado é um portfólio moderno, legível e profissional, que comunica
+              não apenas projetos, mas também <strong>boas práticas de frontend</strong>,
+              atenção a detalhes e preocupação com experiência do usuário.
+            </p>
+
+            <h6>🚀 Evoluções Futuras</h6>
+            <p>
+              Internacionalização, otimizações de acessibilidade (a11y),
+              geração de conteúdo dinâmico e migração para um framework
+              frontend caso necessário.
+            </p>
+
+          </div>
 
     </div>
   </div>
@@ -328,7 +476,7 @@
             Vim Motions • C++ • Estrutura de Dados e Algoritmos
           </p>
         </div>
-        
+
       </div>
 
     </div>
