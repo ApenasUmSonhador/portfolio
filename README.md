@@ -2,7 +2,8 @@
 
 Este é o meu projeto de portfólio, onde apresento meu trabalho e habilidades como desenvolvedor.
 
-![Imagem da Home page](assets/image.png)
+![Imagem da Home page tema claro](assets/image-light.png)
+![Imagem da Home page tema escuro](assets/image-dark.png)
 
 ## Visão Geral
 
