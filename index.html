@@ -17,7 +17,7 @@
 
   <!-- CSS customizado -->
   <link rel="stylesheet" href="css/custom.css">
-
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />        
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
 </head>
 
@@ -40,6 +40,7 @@
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-4">
         <li class="nav-item"><a class="nav-link fade-up" href="#home">Home</a></li>
         <li class="nav-item"><a class="nav-link fade-up" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link fade-up" href="#stacks">Stacks</a></li>
         <li class="nav-item"><a class="nav-link fade-up" href="#projects">Projetos</a></li>
         <li class="nav-item"><a class="nav-link fade-up" href="#about">Sobre</a></li>
         <li class="nav-item">
@@ -106,39 +107,229 @@
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="py-5">
+<section id="skills" class="skills py-5">
+  <div class="container fade-up">
+
+    <h2 class="text-center mb-3">Skills</h2>
+    <p class="text-center mb-4">
+      Tecnologias que utilizo no dia a dia
+    </p>
+
+    <!-- FILTROS -->
+    <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+      <button class="btn btn-outline-gold btn-sm skill-filter active" data-filter="all">
+        Todas
+      </button>
+      <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="frontend">
+        Frontend
+      </button>
+      <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="backend">
+        Backend
+      </button>
+      <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="database">
+        Database
+      </button>
+      <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="tools">
+        Tools & DevOps
+      </button>
+    </div>
+
+    <!-- CARROSSEL -->
+    <div class="skills-carousel-wrapper">
+      <div class="skills-carousel">
+
+        <!-- FRONTEND -->
+        <div class="skill-card" data-category="frontend">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" />
+          <span>Bootstrap</span>
+        </div>
+
+        <div class="skill-card" data-category="frontend">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
+          <span>React</span>
+        </div>
+
+        <div class="skill-card" data-category="frontend">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" alt="Vue.js" />
+          <span>Vue.js</span>
+        </div>
+
+        <div class="skill-card" data-category="frontend">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" />
+          <span>TypeScript</span>
+        </div>
+
+        <div class="skill-card" data-category="frontend">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
+          <span>JavaScript</span>
+        </div>
+
+        <div class="skill-card" data-category="frontend">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" />
+              <span>HTML</span>
+        </div>
+
+        <div class="skill-card" data-category="frontend">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" />
+          <span>CSS</span>
+        </div>
+
+        <!-- BACKEND -->
+        <div class="skill-card" data-category="backend">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP" />
+          <span>PHP</span>
+        </div>
+
+        <div class="skill-card" data-category="backend">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel" />
+          <span>Laravel</span>
+        </div>
+
+        <div class="skill-card" data-category="backend">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" alt="Node.js" />
+          <span>Node.js</span>
+        </div>
+
+        <div class="skill-card" data-category="backend">
+          <i
+            class="devicon-express-original"
+            style="font-size: 60px;"
+            aria-hidden="true"
+          ></i>
+          <span>
+            Express.js
+          </span>
+        </div>
+
+        <div class="skill-card" data-category="backend">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" />
+          <span>Java</span>
+        </div>
+
+        <div class="skill-card" data-category="backend">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring" />
+          <span>Spring</span>
+        </div>
+
+        <div class="skill-card" data-category="backend">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" />
+          <span>Python</span>
+        </div>
+
+        <!-- DATABASE -->
+        <div class="skill-card" data-category="database">
+          <i 
+            class="devicon-prisma-original"
+            style="font-size: 60px;"
+            aria-hidden="true"
+          ></i>
+          <span>Prisma ORM</span>
+        </div>
+
+        <div class="skill-card" data-category="database">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+          <span>PostgreSQL</span>
+        </div>
+
+        <div class="skill-card" data-category="database">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL">
+          <span>MySQL</span>
+        </div>
+
+        <div class="skill-card" data-category="database">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" alt="SQL" />
+          <span>SQL</span>
+        </div>
+
+        <!-- TOOLS -->
+        <div class="skill-card" data-category="tools">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" />
+          <span>Git</span>
+        </div>
+
+        <div class="skill-card" data-category="tools">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" />
+          <span>Docker</span>
+        </div>
+
+        <div class="skill-card" data-category="tools">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" />
+          <span>VS Code</span>
+        </div>
+
+        <div class="skill-card" data-category="tools">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" />
+          <span>Linux</span>
+        </div>
+
+        <div class="skill-card" data-category="tools">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" alt="GitHub Actions">
+          <span>GitHub Actions</span>
+        </div>
+
+        <div class="skill-card" data-category="tools">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" alt="Jest">
+          <span>Jest</span>
+        </div>
+
+        <div class="skill-card" data-category="tools">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" alt="Jira" />
+          <span>Jira</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STACKS -->
+<section id="stacks" class="py-5">
   <div class="container">
-    <h2 class="text-center mb-4 fade-up">Skills</h2>
+
+    <h2 class="text-center mb-3 fade-up">Stacks</h2>
     <p class="text-center mb-5 fade-up">
-      Tecnologias que utilizo para desenvolver soluções completas.
+      Como transformo tecnologia em soluções reais
     </p>
 
     <div class="row g-4">
-      <div class="col-6 col-md-3 fade-up">
-        <div class="card h-100 text-center p-3">
-          <h5 class="text-gold">Frontend</h5>
-          <p> Bootstrap • React • Vue.js • TypeScript • JavaScript • HTML • CSS </p>
+
+      <!-- Stacks -->
+      <div class="col-12 col-md-6 col-lg-3 fade-up">
+        <div class="card h-100 p-4 text-center">
+          <h5 class="text-gold">Frontend Engineering</h5>
+          <p>
+            Desenvolvimento de interfaces responsivas, acessíveis e orientadas
+            a componentes, com foco em experiência do usuário e performance.
+          </p>
         </div>
       </div>
 
-      <div class="col-6 col-md-3 fade-up">
-        <div class="card h-100 text-center p-3">
-          <h5 class="text-gold">Backend</h5>
-          <p>PHP • Laravel • JavaScript • Node.js • Express.js • Prisma ORM • Java • Spring • Python </p>
+      <div class="col-12 col-md-6 col-lg-3 fade-up">
+        <div class="card h-100 p-4 text-center">
+          <h5 class="text-gold">Backend & APIs</h5>
+          <p>
+            Criação de APIs RESTful, autenticação, regras de negócio e
+            integração com bancos de dados relacionais.
+          </p>
         </div>
       </div>
 
-      <div class="col-6 col-md-3 fade-up">
-        <div class="card h-100 text-center p-3">
-          <h5 class="text-gold">Database</h5>
-          <p>Prisma ORM • PostgreSQL • MySQL • SQL</p>
+      <div class="col-12 col-md-6 col-lg-3 fade-up">
+        <div class="card h-100 p-4 text-center">
+          <h5 class="text-gold">Data & Persistence</h5>
+          <p>
+            Modelagem de dados, SQL, migrações, integridade relacional
+            e camadas de acesso bem definidas.
+          </p>
         </div>
       </div>
 
-      <div class="col-6 col-md-3 fade-up">
-        <div class="card h-100 text-center p-3">
-          <h5 class="text-gold">Tools & DevOps</h5>
-          <p>Git • Git Flow • Docker • GitHub Actions • Jest • CI/CD • Jira</p>
+      <div class="col-12 col-md-6 col-lg-3 fade-up">
+        <div class="card h-100 p-4 text-center">
+          <h5 class="text-gold">DevOps & Workflow</h5>
+          <p>
+            Versionamento com Git Flow, ambientes com Docker,
+            automação e boas práticas de entrega contínua.
+          </p>
         </div>
       </div>
     </div>
@@ -501,5 +692,6 @@
 <script src="js/toggle-mode.js"></script>
 <script src="js/animations.js"></script>
 <script src="js/projects-filter.js"></script>
+<script src="js/skills-carousel.js"></script>
 </body>
 </html>
