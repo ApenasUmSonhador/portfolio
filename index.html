@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" itemscope itemtype="https://schema.org/Person">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Arthur Nunes | Full Stack Developer</title>
+  <title>Arthur Nunes | Desenvolvedor Full Stack | Portfólio</title>
 
   <!--- Meta Tags -->
-  <meta name="description" content="Portfólio profissional de Arthur Nunes, Desenvolvedor Full Stack. Projetos, skills e stacks." />
+  <meta name="description"
+content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.js e PostgreSQL. Veja projetos, experiência e contato." />
   <meta name="author" content="Arthur Nunes" />
   <meta name="keywords" content="Arthur Nunes, Desenvolvedor Full Stack, Portfólio, Projetos, Skills, Stacks, React, Node.js, JavaScript, TypeScript, PostgreSQL" />
-  <meta property="og:title" content="Arthur Nunes | Full Stack Developer" />
+  <meta property="og:title" content="Arthur Nunes | Desenvolvedor Full Stack | Portfólio" />
   <meta property="og:image" content="https://apenasumsonhador.github.io/portfolio/assets/image-light.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -45,734 +46,782 @@
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />        
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Arthur Nunes",
+    "url": "https://apenasumsonhador.github.io/portfolio/",
+    "jobTitle": "Desenvolvedor Full Stack",
+    "sameAs": [
+      "https://www.linkedin.com/in/arthurvininunes/",
+      "https://github.com/ApenasUmSonhador"
+    ]
+  }
+  </script>
 </head>
 
 <body>
+<!-- Skip link for accessibility -->
+<a href="#home" class="skip-link">
+  Pular para o conteúdo
+</a>
 
+<header>
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold fade-up" href="#home">
-      Arthur Nunes<span class="text-gold">.</span>
-    </a>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fade-up" itemprop="name" href="#home">
+        Arthur Nunes<span class="text-gold">.</span>
+      </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-      <span class="navbar-toggler-icon">
-        <span></span>
-      </span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-4">
-        <li class="nav-item"><a class="nav-link fade-up" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link fade-up" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link fade-up" href="#stacks">Stacks</a></li>
-        <li class="nav-item"><a class="nav-link fade-up" href="#projects">Projetos</a></li>
-        <li class="nav-item"><a class="nav-link fade-up" href="#about">Sobre</a></li>
-        <li class="nav-item">
-          <a class="nav-link fade-up" target="_blank"
-             href="https://apenasumsonhador.github.io/Curriculum-Vitae/">
-            Currículo
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <button 
-      id="themeToggle"
-      class="btn btn-sm btn-outline-gold ms-lg-3 fade-up"
-      aria-label="Alternar tema"
-    >
-      🌙
-    </button>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section id="home" class="hero d-flex align-items-center">
-  <div class="container">
-    <div class="row align-items-center gy-5">
-
-      <!-- TEXTO -->
-      <div class="col-12 col-lg-6 text-center text-lg-start">
-        <h1 class="hero-title fade-up">
-          Eleve seu negócio a outro nível com um
-          <span class="text-gold">Full Stack de qualidade</span>
-        </h1>
-
-        <p class="hero-text mt-4 fade-up">
-          Olá! Sou <strong>Arthur Nunes</strong>, Desenvolvedor <strong>Full Stack</strong> 
-          com experiência em construir aplicações modernas, escaláveis e eficientes. 
-          Ajudo empresas a transformar sonhos em código. 
-          Vamos conversar?
-        </p>
-
-        <div class="d-flex flex-column flex-sm-row gap-3 mt-4 justify-content-center justify-content-lg-start fade-up">
-          <a class="btn btn-outline-gold btn-lg" target="_blank"
-             href="https://www.linkedin.com/in/arthurvininunes/">
-            LinkedIn
-          </a>
-          <a class="btn btn-outline-gold btn-lg" target="_blank"
-             href="https://github.com/ApenasUmSonhador">
-            GitHub
-          </a>
-        </div>
-      </div>
-
-      <!-- IMAGEM -->
-      <div class="col-12 col-lg-6 text-center fade-up">
-        <img 
-          src="assets/foto-perfil.png" 
-          alt="Arthur Nunes"
-          class="img-fluid hero-image"
-        >
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="skills py-5">
-  <div class="container fade-up">
-
-    <h2 class="text-center mb-3">Skills</h2>
-    <p class="text-center mb-4">
-      Tecnologias que utilizo no dia a dia
-    </p>
-
-    <!-- FILTROS -->
-    <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-      <button class="btn btn-outline-gold btn-sm skill-filter active" data-filter="all">
-        Todas
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon">
+          <span></span>
+        </span>
       </button>
-      <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="frontend">
-        Frontend
-      </button>
-      <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="backend">
-        Backend
-      </button>
-      <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="database">
-        Database
-      </button>
-      <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="tools">
-        Tools & DevOps
-      </button>
-    </div>
 
-    <!-- CARROSSEL -->
-    <div class="skills-carousel-wrapper">
-      <div class="skills-carousel">
-
-        <!-- FRONTEND -->
-        <div class="skill-card" data-category="frontend">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" />
-          <span>Bootstrap</span>
-        </div>
-
-        <div class="skill-card" data-category="frontend">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
-          <span>React</span>
-        </div>
-
-        <div class="skill-card" data-category="frontend">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" alt="Vue.js" />
-          <span>Vue.js</span>
-        </div>
-
-        <div class="skill-card" data-category="frontend">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" />
-          <span>TypeScript</span>
-        </div>
-
-        <div class="skill-card" data-category="frontend">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
-          <span>JavaScript</span>
-        </div>
-
-        <div class="skill-card" data-category="frontend">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" />
-              <span>HTML</span>
-        </div>
-
-        <div class="skill-card" data-category="frontend">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" />
-          <span>CSS</span>
-        </div>
-
-        <div class="skill-card" data-category="frontend">        
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" alt="Sass" />
-          <span>Sass</span>
-        </div>
-
-        <!-- BACKEND -->
-        <div class="skill-card" data-category="backend">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP" />
-          <span>PHP</span>
-        </div>
-
-        <div class="skill-card" data-category="backend">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel" />
-          <span>Laravel</span>
-        </div>
-
-        <div class="skill-card" data-category="backend">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" alt="Node.js" />
-          <span>Node.js</span>
-        </div>
-
-        <div class="skill-card" data-category="backend">
-          <i
-            class="devicon-express-original"
-            style="font-size: 60px;"
-            aria-hidden="true"
-          ></i>
-          <span>
-            Express.js
-          </span>
-        </div>
-
-        <div class="skill-card" data-category="backend">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" />
-          <span>Java</span>
-        </div>
-
-        <div class="skill-card" data-category="backend">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring" />
-          <span>Spring</span>
-        </div>
-
-        <div class="skill-card" data-category="backend">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" />
-          <span>Python</span>
-        </div>
-
-        <!-- DATABASE -->
-        <div class="skill-card" data-category="database">
-          <i 
-            class="devicon-prisma-original"
-            style="font-size: 60px;"
-            aria-hidden="true"
-          ></i>
-          <span>Prisma ORM</span>
-        </div>
-
-        <div class="skill-card" data-category="database">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
-          <span>PostgreSQL</span>
-        </div>
-
-        <div class="skill-card" data-category="database">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL">
-          <span>MySQL</span>
-        </div>
-
-        <div class="skill-card" data-category="database">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" alt="SQL" />
-          <span>SQL</span>
-        </div>
-
-        <div class="skill-card" data-category="database">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" alt="Supabase" />
-          <span>Supabase</span>
-        </div>
-
-        <!-- TOOLS -->
-        <div class="skill-card" data-category="tools">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" />
-          <span>Git</span>
-        </div>
-        
-        <div class="skill-card" data-category="tools">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bitbucket/bitbucket-original.svg" alt="Bitbucket" />
-          <span>Bitbucket</span>
-        </div>
-
-        <div class="skill-card" data-category="tools" >
-          <i 
-            class="devicon-github-original"
-            style="font-size: 60px;"
-            aria-hidden="true"></i>
-          <span>GitHub</span>
-        </div>
-
-        <div class="skill-card" data-category="tools">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" alt="GitLab" />
-          <span>GitLab</span>
-        </div>
-
-        <div class="skill-card" data-category="tools">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg" alt="NPM" />
-          <span>NPM</span>
-        </div>
-
-        <div class="skill-card" data-category="tools">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" alt="Postman" />
-          <span>Postman</span>
-        </div>
-
-        <div class="skill-card" data-category="tools">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" />
-          <span>Docker</span>
-        </div>
-
-        <div class="skill-card" data-category="tools">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" />
-          <span>VS Code</span>
-        </div>
-
-        <div class="skill-card" data-category="tools">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" />
-          <span>Linux</span>
-        </div>
-
-        <div class="skill-card" data-category="tools">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" alt="GitHub Actions" />
-          <span>GitHub Actions</span>
-        </div>
-
-        <div class="skill-card" data-category="tools">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" alt="Jest">
-          <span>Jest</span>
-        </div>
-
-        <div class="skill-card" data-category="tools">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" alt="Jira" />
-          <span>Jira</span>
-        </div>
-
-        <div class="skill-card" data-category="tools">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg" alt="Slack" />
-          <span>Slack</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- STACKS -->
-<section id="stacks" class="py-5">
-  <div class="container">
-
-    <h2 class="text-center mb-3 fade-up">Stacks</h2>
-    <p class="text-center mb-5 fade-up">
-      Como transformo tecnologia em soluções reais
-    </p>
-
-    <div class="row g-4">
-
-      <!-- Stacks -->
-      <div class="col-12 col-md-6 col-lg-3 fade-up">
-        <div class="card h-100 p-4 text-center">
-          <h5 class="text-gold">Frontend Engineering</h5>
-          <p>
-            Desenvolvimento de interfaces responsivas, acessíveis e orientadas
-            a componentes, com foco em experiência do usuário e performance.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3 fade-up">
-        <div class="card h-100 p-4 text-center">
-          <h5 class="text-gold">Backend & APIs</h5>
-          <p>
-            Criação de APIs RESTful, autenticação, regras de negócio e
-            integração com bancos de dados relacionais.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3 fade-up">
-        <div class="card h-100 p-4 text-center">
-          <h5 class="text-gold">Data & Persistence</h5>
-          <p>
-            Modelagem de dados, SQL, migrações, integridade relacional
-            e camadas de acesso bem definidas.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3 fade-up">
-        <div class="card h-100 p-4 text-center">
-          <h5 class="text-gold">DevOps & Workflow</h5>
-          <p>
-            Versionamento com Git Flow, ambientes com Docker,
-            automação e boas práticas de entrega contínua.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROJETOS -->
-<section id="projects" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4 fade-up">Projetos</h2>
-    <p class="text-center mb-5 fade-up">
-      Alguns projetos que demonstram minhas habilidades na prática.
-    </p>
-
-    <div class="d-flex flex-wrap justify-content-center gap-2 mb-4 fade-up">
-      <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="all">
-        Todos
-      </button>
-      <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="frontend">
-        Frontend
-      </button>
-      <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="backend">
-        Backend
-      </button>
-      <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="database">
-        Database
-      </button>
-    </div>
-
-    <div class="row g-4">
-
-      <!-- To-Do List Fullstack -->
-      <div 
-        class="col-12 col-md-6 col-lg-4 fade-up project-item"
-        data-category="frontend backend database auth"
-      >
-        <div class="card project-card h-100">
-
-          <div class="project-image"
-              role="button"
-              tabindex="0"
-              data-bs-toggle="modal"
-              data-bs-target="#caseTodo"
-          >
-            <img 
-              src="assets/to-do-list-repo.png"
-              alt="Preview do projeto To-Do List"
-            >
-          </div>
-
-          <div class="p-3 d-flex flex-column h-100">
-            <h5 class="text-gold">To-Do List Fullstack</h5>
-
-            <!-- TAGS -->
-            <div class="d-flex flex-wrap gap-2 mb-3">
-              <span class="badge badge-frontend">Frontend</span>
-              <span class="badge badge-backend">Backend</span>
-              <span class="badge badge-database">Database</span>
-              <span class="badge badge-auth">Auth</span>
-
-              <span class="badge badge-react">React</span>
-              <span class="badge badge-ts">TypeScript</span>
-              <span class="badge badge-node">Node.js</span>
-              <span class="badge badge-prisma">Prisma</span>
-              <span class="badge badge-postgres">PostgreSQL</span>
-              <span class="badge badge-jwt">JWT</span>
-              <span class="badge badge-html">HTML</span>
-              <span class="badge badge-css">CSS</span>
-              <span class="badge badge-js">JavaScript</span>
-            </div>
-
-            <p>
-              Aplicação completa com React, Material UI e TypeScript no frontend, 
-              Node.js, Express, Prisma e PostgreSQL no backend, incluindo autenticação JWT.
-            </p>
-
-            <div class="mt-auto d-flex gap-2">
-              <a class="btn btn-outline-gold btn-sm disabled">Demo</a>
-              <a 
-                class="btn btn-outline-gold btn-sm"
-                href="https://github.com/ApenasUmSonhador/React-Node.js-to-do-list"
-                target="_blank"
-              >
-                GitHub
-              </a>
-              <button class="btn btn-outline-gold btn-sm" data-bs-toggle="modal" data-bs-target="#caseTodo">
-                Ver case
-              </button>              
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Modal To-Do List Full Stack -->
-      <div class="modal fade" id="caseTodo" tabindex="-1">
-      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title text-gold">To-Do List Full Stack — Case</h5>
-            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-
-          <!-- === Texto === -->
-          <div class="modal-body">
-
-            <h6>Problema</h6>
-            <p>
-              Aplicações simples de gerenciamento de tarefas geralmente não oferecem
-              autenticação segura, persistência de dados confiável ou separação clara
-              entre frontend e backend, dificultando a escalabilidade e manutenção
-              do sistema à medida que ele cresce.
-            </p>
-
-            <h6>🛠️ Solução</h6>
-            <p>
-              Foi desenvolvida uma aplicação <strong>Full Stack</strong> com frontend
-              desacoplado e backend em forma de <strong>API REST</strong>, permitindo
-              autenticação de usuários, gerenciamento completo de tarefas (CRUD)
-              e persistência segura dos dados.
-            </p>
-
-            <p>
-              O frontend atua como uma <strong>SPA</strong>, consumindo a API via Axios,
-              enquanto o backend centraliza regras de negócio, autenticação e acesso
-              ao banco de dados.
-            </p>
-
-            <h6>🧠 Decisões Técnicas</h6>
-            <ul>
-              <li>
-                <strong>TypeScript</strong> em toda a aplicação para maior segurança,
-                legibilidade e redução de erros em tempo de desenvolvimento.
-              </li>
-              <li>
-                <strong>JWT</strong> para autenticação stateless, facilitando escalabilidade
-                e integração futura com outros clientes.
-              </li>
-              <li>
-                <strong>Prisma ORM</strong> para modelagem e acesso ao banco de dados,
-                garantindo tipagem forte e migrações controladas.
-              </li>
-              <li>
-                <strong>Separação clara de responsabilidades</strong> entre frontend e backend,
-                seguindo boas práticas de arquitetura.
-              </li>
-            </ul>
-
-            <h6>📈 Resultado</h6>
-            <p>
-              O projeto resultou em uma aplicação funcional, segura e extensível,
-              servindo como base sólida para futuras evoluções, como permissões por usuário,
-              novos tipos de tarefas ou integração com outros serviços.
-            </p>
-
-            <h6>🚧 Próximos Passos</h6>
-            <p>
-              Implementação de permissões, testes automatizados,
-              cache de requisições e deploy com Docker.
-            </p>
-
-          </div>
-        </div>
-      </div>
-      </div>
-
-
-      <!-- Portfolio Frontend -->
-      <div 
-        class="col-12 col-md-6 col-lg-4 fade-up project-item"
-        data-category="frontend"
-      >
-        <div class="card project-card h-100">
-
-          <div class="project-image"
-              role="button"
-              tabindex="0"
-              data-bs-toggle="modal"
-              data-bs-target="#casePortfolio"
-          >
-            <img 
-              src="assets/image-light.png"
-              alt="Preview do projeto Portfolio Frontend"
-            >
-          </div>
-
-          <div class="p-3 d-flex flex-column h-100">
-            <h5 class="text-gold">Portfólio Profissional</h5>
-            <a
-              href="https://youtu.be/d8MReiqqElE?si=x-Q66p4MdUSd14Vh&t=374"
-              target="_blank"
-              class="project-review-btn"
-              title="Ver review em vídeo"
-            >
-              <i class="bi bi-play-circle-fill"></i>
-              Review em vídeo · Karol Attekita
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-4">
+          <li class="nav-item"><a class="nav-link fade-up" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link fade-up" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link fade-up" href="#stacks">Stacks</a></li>
+          <li class="nav-item"><a class="nav-link fade-up" href="#projects">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link fade-up" href="#about">Sobre</a></li>
+          <li class="nav-item">
+            <a class="nav-link fade-up" target="_blank" rel="noopener noreferrer"
+              href="https://apenasumsonhador.github.io/Curriculum-Vitae/">
+              Currículo
             </a>
-
-            <!-- TAGS -->
-            <div class="d-flex flex-wrap gap-2 mb-3">
-              <span class="badge badge-frontend">Frontend</span>
-
-              <span class="badge badge-html">HTML</span>
-              <span class="badge badge-css">CSS</span>
-              <span class="badge badge-js">JavaScript</span>
-              <span class="badge badge-bootstrap">Bootstrap</span>
-
-            </div>
-
-            <p>
-              Portfólio profissional desenvolvido com HTML, CSS, JavaScript e Bootstrap, 
-              apresentando design responsivo, modo claro/escuro e animações suaves para uma experiência moderna.
-            </p>
-
-            <div class="mt-auto d-flex gap-2">
-              <a 
-                class="btn btn-outline-gold btn-sm"
-                href="https://apenasumsonhador.github.io/portfolio/"
-                target="_blank">
-                Demo
-              </a>
-              <a 
-                class="btn btn-outline-gold btn-sm"
-                href="https://github.com/ApenasUmSonhador/portfolio"
-                target="_blank"
-              >
-                GitHub
-              </a>
-
-              <button class="btn btn-outline-gold btn-sm" data-bs-toggle="modal" data-bs-target="#casePortfolio">
-                Ver case
-              </button>
-            </div>
-          </div>
-
-        </div>
+          </li>
+        </ul>
       </div>
 
-      <!-- Modal Portfolio Frontend -->
-      <div class="modal fade" id="casePortfolio" tabindex="-1">
+      <button 
+        id="themeToggle"
+        class="btn btn-sm btn-outline-gold ms-lg-3 fade-up"
+        aria-label="Alternar tema"
+      >
+        🌙
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <section id="home" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+
+        <!-- TEXTO -->
+        <div class="col-12 col-lg-6 text-center text-lg-start">
+          <h1 class="hero-title fade-up">
+            Eleve seu negócio a outro nível com um
+            <span class="text-gold">Full Stack de qualidade</span>
+          </h1>
+
+          <p class="hero-text mt-4 fade-up" itemprop="description">
+            Olá! Sou <strong>Arthur Nunes</strong>, <span itemprop="jobTitle">Desenvolvedor <strong>Full Stack</strong></span> 
+            com experiência em construir aplicações modernas, escaláveis e eficientes. 
+            Ajudo empresas a transformar sonhos em código. 
+            Vamos conversar?
+          </p>
+
+          <div class="d-flex flex-column flex-sm-row gap-3 mt-4 justify-content-center justify-content-lg-start fade-up">
+            <a 
+              class="btn btn-outline-gold btn-lg"
+              itemprop="sameAs"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/arthurvininunes/"
+            >
+              LinkedIn
+            </a>
+            <a 
+              class="btn btn-outline-gold btn-lg"
+              itemprop="sameAs"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/ApenasUmSonhador"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- IMAGEM -->
+        <figure class="col-12 col-lg-6 text-center fade-up">
+          <img 
+            src="assets/foto-perfil.png" 
+            alt="Arthur Nunes"
+            class="img-fluid hero-image"
+            itemprop="image"
+          >
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+</header>
+
+<main>
+  <!-- SKILLS -->
+  <section id="skills" class="skills py-5">
+    <div class="container fade-up">
+      <header class="text-center">
+        <h2 class="mb-3">Skills</h2>
+        <p class="mb-4">
+            Tecnologias que utilizo no dia a dia
+        </p>
+      </header>
+      
+
+      <!-- FILTROS -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+        <button class="btn btn-outline-gold btn-sm skill-filter active" data-filter="all">
+          Todas
+        </button>
+        <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="frontend">
+          Frontend
+        </button>
+        <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="backend">
+          Backend
+        </button>
+        <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="database">
+          Database
+        </button>
+        <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="tools">
+          Tools & DevOps
+        </button>
+      </div>
+
+      <!-- CARROSSEL -->
+      <div class="skills-carousel-wrapper">
+        <ul class="skills-carousel">
+
+          <!-- FRONTEND -->
+          <li class="skill-card" data-category="frontend">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" />
+            <span>Bootstrap</span>
+          </li>
+
+          <li class="skill-card" data-category="frontend">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
+            <span>React</span>
+          </li>
+
+          <li class="skill-card" data-category="frontend">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" alt="Vue.js" />
+            <span>Vue.js</span>
+          </li>
+
+          <li class="skill-card" data-category="frontend">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" />
+            <span>TypeScript</span>
+          </li>
+
+          <li class="skill-card" data-category="frontend">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
+            <span>JavaScript</span>
+          </li>
+
+          <li class="skill-card" data-category="frontend">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" />
+                <span>HTML</span>
+          </li>
+
+          <li class="skill-card" data-category="frontend">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" />
+            <span>CSS</span>
+          </li>
+
+          <li class="skill-card" data-category="frontend">        
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" alt="Sass" />
+            <span>Sass</span>
+          </li>
+
+          <!-- BACKEND -->
+          <li class="skill-card" data-category="backend">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP" />
+            <span>PHP</span>
+          </li>
+
+          <li class="skill-card" data-category="backend">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel" />
+            <span>Laravel</span>
+          </li>
+
+          <li class="skill-card" data-category="backend">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" alt="Node.js" />
+            <span>Node.js</span>
+          </li>
+
+          <li class="skill-card" data-category="backend">
+            <i
+              class="devicon-express-original"
+              style="font-size: 60px;"
+              aria-hidden="true"
+            ></i>
+            <span>
+              Express.js
+            </span>
+          </li>
+
+          <li class="skill-card" data-category="backend">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" />
+            <span>Java</span>
+          </li>
+
+          <li class="skill-card" data-category="backend">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring" />
+            <span>Spring</span>
+          </li>
+
+          <li class="skill-card" data-category="backend">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" />
+            <span>Python</span>
+          </li>
+
+          <!-- DATABASE -->
+          <li class="skill-card" data-category="database">
+            <i 
+              class="devicon-prisma-original"
+              style="font-size: 60px;"
+              aria-hidden="true"
+            ></i>
+            <span>Prisma ORM</span>
+          </li>
+
+          <li class="skill-card" data-category="database">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+            <span>PostgreSQL</span>
+          </li>
+
+          <li class="skill-card" data-category="database">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL">
+            <span>MySQL</span>
+          </li>
+
+          <li class="skill-card" data-category="database">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" alt="SQL" />
+            <span>SQL</span>
+          </li>
+
+          <li class="skill-card" data-category="database">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" alt="Supabase" />
+            <span>Supabase</span>
+          </li>
+
+          <!-- TOOLS -->
+          <li class="skill-card" data-category="tools">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" />
+            <span>Git</span>
+          </li>
+          
+          <li class="skill-card" data-category="tools">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bitbucket/bitbucket-original.svg" alt="Bitbucket" />
+            <span>Bitbucket</span>
+          </li>
+
+          <li class="skill-card" data-category="tools" >
+            <i 
+              class="devicon-github-original"
+              style="font-size: 60px;"
+              aria-hidden="true"></i>
+            <span>GitHub</span>
+          </li>
+
+          <li class="skill-card" data-category="tools">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" alt="GitLab" />
+            <span>GitLab</span>
+          </li>
+
+          <li class="skill-card" data-category="tools">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg" alt="NPM" />
+            <span>NPM</span>
+          </li>
+
+          <li class="skill-card" data-category="tools">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" alt="Postman" />
+            <span>Postman</span>
+          </li>
+
+          <li class="skill-card" data-category="tools">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" />
+            <span>Docker</span>
+          </li>
+
+          <li class="skill-card" data-category="tools">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" />
+            <span>VS Code</span>
+          </li>
+
+          <li class="skill-card" data-category="tools">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" />
+            <span>Linux</span>
+          </li>
+
+          <li class="skill-card" data-category="tools">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" alt="GitHub Actions" />
+            <span>GitHub Actions</span>
+          </li>
+
+          <li class="skill-card" data-category="tools">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" alt="Jest">
+            <span>Jest</span>
+          </li>
+
+          <li class="skill-card" data-category="tools">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" alt="Jira" />
+            <span>Jira</span>
+          </li>
+
+          <li class="skill-card" data-category="tools">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg" alt="Slack" />
+            <span>Slack</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACKS -->
+  <section id="stacks" class="py-5">
+    <div class="container">
+
+      <h2 class="text-center mb-3 fade-up">Stacks</h2>
+      <p class="text-center mb-5 fade-up">
+        Como transformo tecnologia em soluções reais
+      </p>
+
+      <div class="row g-4">
+
+        <!-- Stacks -->
+        <div class="col-12 col-md-6 col-lg-3 fade-up">
+          <div class="card h-100 p-4 text-center">
+            <h3 class="text-gold">Frontend Engineering</h3>
+            <p>
+              Desenvolvimento de interfaces responsivas, acessíveis e orientadas
+              a componentes, com foco em experiência do usuário e performance.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 fade-up">
+          <div class="card h-100 p-4 text-center">
+            <h3 class="text-gold">Backend & APIs</h3>
+            <p>
+              Criação de APIs RESTful, autenticação, regras de negócio e
+              integração com bancos de dados relacionais.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 fade-up">
+          <div class="card h-100 p-4 text-center">
+            <h3 class="text-gold">Data & Persistence</h3>
+            <p>
+              Modelagem de dados, SQL, migrações, integridade relacional
+              e camadas de acesso bem definidas.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 fade-up">
+          <div class="card h-100 p-4 text-center">
+            <h3 class="text-gold">DevOps & Workflow</h3>
+            <p>
+              Versionamento com Git Flow, ambientes com Docker,
+              automação e boas práticas de entrega contínua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 fade-up">Projetos</h2>
+      <p class="text-center mb-5 fade-up">
+        Alguns projetos que demonstram minhas habilidades na prática.
+      </p>
+
+      <div class="d-flex flex-wrap justify-content-center gap-2 mb-4 fade-up">
+        <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="all">
+          Todos
+        </button>
+        <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="frontend">
+          Frontend
+        </button>
+        <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="backend">
+          Backend
+        </button>
+        <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="database">
+          Database
+        </button>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- To-Do List Fullstack -->
+        <article 
+          class="col-12 col-md-6 col-lg-4 fade-up project-item"
+          data-category="frontend backend database auth"
+        >
+          <div class="card project-card h-100">
+
+            <button class="project-image" 
+                type="button"
+                tabindex="0"
+                data-bs-toggle="modal"
+                data-bs-target="#caseTodo"
+            >
+              <img 
+                src="assets/to-do-list-repo.png"
+                alt="Preview do projeto To-Do List"
+              >
+            </button>
+
+            <div class="p-3 d-flex flex-column h-100">
+              <h3 class="text-gold">To-Do List Fullstack</h3>
+
+              <!-- TAGS -->
+              <ul class="d-flex flex-wrap gap-2 mb-3">
+                <!-- Stack Badges -->
+                <li><span class="badge badge-frontend">Frontend</span></li>
+                <li><span class="badge badge-backend">Backend</span></li>
+                <li><span class="badge badge-database">Database</span></li>
+                
+                <!-- Tech Badges -->
+                <li><span class="badge badge-auth">Auth</span></li>
+                <li><span class="badge badge-react">React</span></li>
+                <li><span class="badge badge-ts">TypeScript</span></li>
+                <li><span class="badge badge-node">Node.js</span></li>
+                <li><span class="badge badge-prisma">Prisma</span></li>
+                <li><span class="badge badge-postgres">PostgreSQL</span></li>
+                <li><span class="badge badge-jwt">JWT</span></li>
+                <li><span class="badge badge-html">HTML</span></li>
+                <li><span class="badge badge-css">CSS</span></li>
+                <li><span class="badge badge-js">JavaScript</span></li>
+              </ul>
+
+              <p>
+                Aplicação completa com React, Material UI e TypeScript no frontend, 
+                Node.js, Express, Prisma e PostgreSQL no backend, incluindo autenticação JWT.
+              </p>
+
+              <div class="mt-auto d-flex gap-2">
+                <a class="btn btn-outline-gold btn-sm disabled">Demo</a>
+                <a 
+                  class="btn btn-outline-gold btn-sm"
+                  href="https://github.com/ApenasUmSonhador/React-Node.js-to-do-list"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+                <button class="btn btn-outline-gold btn-sm" data-bs-toggle="modal" data-bs-target="#caseTodo">
+                  Ver case
+                </button>              
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Modal To-Do List Full Stack -->
+        <div class="modal fade" id="caseTodo" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-gold">Portfólio Profissional — Case</h5>
+              <h3 class="modal-title text-gold">To-Do List Full Stack — Case</h3>
               <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             <!-- === Texto === -->
             <div class="modal-body">
 
-              <h6>Problema</h6>
+              <h4>Problema</h4>
               <p>
-                Muitos portfólios de desenvolvedores apresentam apenas informações estáticas,
-                com pouca preocupação em experiência do usuário, acessibilidade, organização
-                do conteúdo ou reutilização de componentes, o que dificulta transmitir
-                maturidade técnica e identidade profissional.
+                Aplicações simples de gerenciamento de tarefas geralmente não oferecem
+                autenticação segura, persistência de dados confiável ou separação clara
+                entre frontend e backend, dificultando a escalabilidade e manutenção
+                do sistema à medida que ele cresce.
               </p>
 
-              <h6>🛠️ Solução</h6>
+              <h4>🛠️ Solução</h4>
               <p>
-                Foi desenvolvido um <strong>portfólio profissional responsivo</strong>,
-                pensado como um produto, com foco em clareza, legibilidade e experiência
-                consistente em diferentes dispositivos.
+                Foi desenvolvida uma aplicação <strong>Full Stack</strong> com frontend
+                desacoplado e backend em forma de <strong>API REST</strong>, permitindo
+                autenticação de usuários, gerenciamento completo de tarefas (CRUD)
+                e persistência segura dos dados.
               </p>
 
               <p>
-                A aplicação adota uma abordagem <strong>mobile-first</strong>, integra
-                <strong>modo claro e escuro</strong>, animações sutis e uma estrutura
-                modular que facilita manutenção e evolução futura.
+                O frontend atua como uma <strong>SPA</strong>, consumindo a API via Axios,
+                enquanto o backend centraliza regras de negócio, autenticação e acesso
+                ao banco de dados.
               </p>
 
-              <h6>🧠 Decisões Técnicas</h6>
+              <h4>🧠 Decisões Técnicas</h4>
               <ul>
                 <li>
-                  Uso de <strong>Bootstrap 5</strong> para garantir responsividade,
-                  consistência visual e produtividade no layout.
+                  <strong>TypeScript</strong> em toda a aplicação para maior segurança,
+                  legibilidade e redução de erros em tempo de desenvolvimento.
                 </li>
                 <li>
-                  Criação de um <strong>design system baseado em variáveis CSS</strong>,
-                  permitindo alternância de tema (dark/light) sem duplicação de estilos.
+                  <strong>JWT</strong> para autenticação stateless, facilitando escalabilidade
+                  e integração futura com outros clientes.
                 </li>
                 <li>
-                  Animações suaves com <strong>CSS e JavaScript</strong> para melhorar
-                  a percepção de qualidade sem comprometer performance.
+                  <strong>Prisma ORM</strong> para modelagem e acesso ao banco de dados,
+                  garantindo tipagem forte e migrações controladas.
                 </li>
                 <li>
-                  Estrutura sem dependência de frameworks pesados, priorizando
-                  <strong>performance, simplicidade e controle total do código</strong>.
+                  <strong>Separação clara de responsabilidades</strong> entre frontend e backend,
+                  seguindo boas práticas de arquitetura.
                 </li>
               </ul>
 
-              <h6>📈 Resultado</h6>
+              <h4>📈 Resultado</h4>
               <p>
-                O resultado é um portfólio moderno, legível e profissional, que comunica
-                não apenas projetos, mas também <strong>boas práticas de frontend</strong>,
-                atenção a detalhes e preocupação com experiência do usuário.
+                O projeto resultou em uma aplicação funcional, segura e extensível,
+                servindo como base sólida para futuras evoluções, como permissões por usuário,
+                novos tipos de tarefas ou integração com outros serviços.
               </p>
 
-              <h6>🚀 Evoluções Futuras</h6>
+              <h4>🚧 Próximos Passos</h4>
               <p>
-                Internacionalização, otimizações de acessibilidade (a11y),
-                geração de conteúdo dinâmico e migração para um framework
-                frontend caso necessário.
+                Implementação de permissões, testes automatizados,
+                cache de requisições e deploy com Docker.
               </p>
 
             </div>
-
+          </div>
         </div>
+        </div>
+
+
+        <!-- Portfolio Frontend -->
+        <article 
+          class="col-12 col-md-6 col-lg-4 fade-up project-item"
+          data-category="frontend"
+        >
+          <div class="card project-card h-100">
+
+            <button class="project-image"
+                type="button"
+                tabindex="0"
+                data-bs-toggle="modal"
+                data-bs-target="#casePortfolio"
+            >
+              <img 
+                src="assets/image-light.png"
+                alt="Preview do projeto Portfolio Frontend"
+              >
+            </button>
+
+            <div class="p-3 d-flex flex-column h-100">
+              <h3 class="text-gold">Portfólio Profissional</h3>
+              <a
+                href="https://youtu.be/d8MReiqqElE?si=x-Q66p4MdUSd14Vh&t=374"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-review-btn"
+                title="Ver review em vídeo"
+              >
+                <i class="bi bi-play-circle-fill"></i>
+                Review em vídeo · Karol Attekita
+              </a>
+
+              <!-- TAGS -->
+              <ul class="d-flex flex-wrap gap-2 mb-3">
+                <!-- Stack Badges -->
+                <li><span class="badge badge-frontend">Frontend</span></li>
+
+                <!-- Tech Badges -->
+                <li><span class="badge badge-html">HTML</span></li>
+                <li><span class="badge badge-css">CSS</span></li>
+                <li><span class="badge badge-js">JavaScript</span></li>
+                <li><span class="badge badge-bootstrap">Bootstrap</span></li>
+
+              </ul>
+
+              <p>
+                Portfólio profissional desenvolvido com HTML, CSS, JavaScript e Bootstrap, 
+                apresentando design responsivo, modo claro/escuro e animações suaves para uma experiência moderna.
+              </p>
+
+              <div class="mt-auto d-flex gap-2">
+                <a 
+                  class="btn btn-outline-gold btn-sm"
+                  href="https://apenasumsonhador.github.io/portfolio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                  Demo
+                </a>
+                <a 
+                  class="btn btn-outline-gold btn-sm"
+                  href="https://github.com/ApenasUmSonhador/portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+
+                <button class="btn btn-outline-gold btn-sm" data-bs-toggle="modal" data-bs-target="#casePortfolio">
+                  Ver case
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- Modal Portfolio Frontend -->
+        <div class="modal fade" id="casePortfolio" tabindex="-1">
+          <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title text-gold">Portfólio Profissional — Case</h3>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <!-- === Texto === -->
+              <div class="modal-body">
+
+                <h4>Problema</h4>
+                <p>
+                  Muitos portfólios de desenvolvedores apresentam apenas informações estáticas,
+                  com pouca preocupação em experiência do usuário, acessibilidade, organização
+                  do conteúdo ou reutilização de componentes, o que dificulta transmitir
+                  maturidade técnica e identidade profissional.
+                </p>
+
+                <h4>🛠️ Solução</h4>
+                <p>
+                  Foi desenvolvido um <strong>portfólio profissional responsivo</strong>,
+                  pensado como um produto, com foco em clareza, legibilidade e experiência
+                  consistente em diferentes dispositivos.
+                </p>
+
+                <p>
+                  A aplicação adota uma abordagem <strong>mobile-first</strong>, integra
+                  <strong>modo claro e escuro</strong>, animações sutis e uma estrutura
+                  modular que facilita manutenção e evolução futura.
+                </p>
+
+                <h4>🧠 Decisões Técnicas</h4>
+                <ul>
+                  <li>
+                    Uso de <strong>Bootstrap 5</strong> para garantir responsividade,
+                    consistência visual e produtividade no layout.
+                  </li>
+                  <li>
+                    Criação de um <strong>design system baseado em variáveis CSS</strong>,
+                    permitindo alternância de tema (dark/light) sem duplicação de estilos.
+                  </li>
+                  <li>
+                    Animações suaves com <strong>CSS e JavaScript</strong> para melhorar
+                    a percepção de qualidade sem comprometer performance.
+                  </li>
+                  <li>
+                    Estrutura sem dependência de frameworks pesados, priorizando
+                    <strong>performance, simplicidade e controle total do código</strong>.
+                  </li>
+                </ul>
+
+                <h4>📈 Resultado</h4>
+                <p>
+                  O resultado é um portfólio moderno, legível e profissional, que comunica
+                  não apenas projetos, mas também <strong>boas práticas de frontend</strong>,
+                  atenção a detalhes e preocupação com experiência do usuário.
+                </p>
+
+                <h4>🚀 Evoluções Futuras</h4>
+                <p>
+                  Internacionalização, otimizações de acessibilidade (a11y),
+                  geração de conteúdo dinâmico e migração para um framework
+                  frontend caso necessário.
+                </p>
+
+              </div>
+
+          </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- SOBRE -->
-<section id="about" class="py-5">
-  <div class="container">
-    <div class="row align-items-center gy-4">
+  <!-- SOBRE -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center gy-4">
 
-      <div class="col-12 col-lg-6 fade-up">
-        <h2>Sobre mim</h2>
+        <div class="col-12 col-lg-6 fade-up">
+          <h2>Sobre mim</h2>
 
-        <p class="mt-3">
-          Sou <strong>Desenvolvedor Full Stack</strong> com mais de <strong>2 anos de experiência profissional</strong> 
-          no desenvolvimento de aplicações web modernas, escaláveis e orientadas a boas práticas de engenharia de software.
-          Atuo principalmente com o ecossistema <strong>JavaScript/TypeScript</strong>, criando interfaces ricas e responsivas 
-          no frontend e arquiteturas robustas no backend.
-        </p>
-
-        <p>
-          Tenho forte experiência em <strong>React</strong> e <strong>Vue.js</strong>, desenvolvimento de 
-          <strong>APIs RESTful com Node.js</strong>, autenticação, modelagem de dados e integração com 
-          bancos relacionais como <strong>PostgreSQL</strong> e <strong>MySQL</strong>, utilizando 
-          ferramentas como <strong>Prisma ORM</strong>. Também possuo vivência prática com 
-          <strong>Docker</strong>, versionamento com <strong>Git Flow</strong> e fluxos de trabalho Ágeis.
-        </p>
-
-        <p>
-          Atualmente curso <strong>Bacharelado em Ciência da Computação</strong> pela UFC e busco constantemente 
-          evoluir tecnicamente, com foco em <strong>arquitetura de sistemas</strong>, 
-          <strong>código limpo</strong> e <strong>soluções que gerem impacto real</strong>. 
-          Valorizo colaboração, comunicação clara e aprendizado contínuo.
-        </p>
-
-      </div>
-
-      <div class="col-12 col-lg-6 fade-up">
-
-        <div class="card p-4">
-          <h5 class="text-gold">Áreas de interesse</h5>
-          <p class="mb-0">
-            Desenvolvimento Web • Arquitetura de Software • Sistemas Escaláveis • 
-            Engenharia de Software • Experiência do Usuário • Aprendizado Contínuo
+          <p class="mt-3">
+            Sou <strong>Desenvolvedor Full Stack</strong> com mais de <strong>2 anos de experiência profissional</strong> 
+            no desenvolvimento de aplicações web modernas, escaláveis e orientadas a boas práticas de engenharia de software.
+            Atuo principalmente com o ecossistema <strong>JavaScript/TypeScript</strong>, criando interfaces ricas e responsivas 
+            no frontend e arquiteturas robustas no backend.
           </p>
+
+          <p>
+            Tenho forte experiência em <strong>React</strong> e <strong>Vue.js</strong>, desenvolvimento de 
+            <strong>APIs RESTful com Node.js</strong>, autenticação, modelagem de dados e integração com 
+            bancos relacionais como <strong>PostgreSQL</strong> e <strong>MySQL</strong>, utilizando 
+            ferramentas como <strong>Prisma ORM</strong>. Também possuo vivência prática com 
+            <strong>Docker</strong>, versionamento com <strong>Git Flow</strong> e fluxos de trabalho Ágeis.
+          </p>
+
+          <p>
+            Atualmente curso <strong>Bacharelado em Ciência da Computação</strong> pela 
+            <span itemprop="affiliation">Universidade Federal do Ceará</span> e busco constantemente 
+            evoluir tecnicamente, com foco em <strong>arquitetura de sistemas</strong>, 
+            <strong>código limpo</strong> e <strong>soluções que gerem impacto real</strong>. 
+            Valorizo colaboração, comunicação clara e aprendizado contínuo.
+          </p>
+
         </div>
 
-        <div class="card p-4 mt-4">
-          <h5 class="text-gold">Estudando no momento</h5>
-          <p class="mb-0">
-            Vim Motions • C++ • Estrutura de Dados e Algoritmos
-          </p>
+        <div class="col-12 col-lg-6 fade-up">
+
+          <div class="card p-4">
+            <h3 class="text-gold">Áreas de interesse</h3>
+            <p class="mb-0">
+              Desenvolvimento Web • Arquitetura de Software • Sistemas Escaláveis • 
+              Engenharia de Software • Experiência do Usuário • Aprendizado Contínuo
+            </p>
+          </div>
+
+          <div class="card p-4 mt-4">
+            <h3 class="text-gold">Estudando no momento</h3>
+            <p class="mb-0">
+              Vim Motions • C++ • Estrutura de Dados e Algoritmos
+            </p>
+          </div>
+
         </div>
 
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer class="footer text-center fade-up">
   <div class="container">
-    <span class="mb-0">
+    <address class="mb-0">
       © 2026 Arthur Nunes • Full Stack Developer
-    </span>
+    </address>
   </div>
 </footer>
 

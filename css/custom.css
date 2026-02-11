@@ -80,6 +80,14 @@ section > .container > p {
   margin-right: auto;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
 /* ==========================
    NAVBAR — ISOLADA DO BOOTSTRAP
 ========================== */
@@ -355,7 +363,7 @@ body.light .project-review-btn:hover {
   white-space: nowrap;
 }
 
-.card h5 {
+.card h3 {
   margin-bottom: 0.75rem;
 }
 
@@ -543,7 +551,7 @@ body.light .modal-header .btn-close {
 }
 
 /* Seções do case */
-.modal-body h6 {
+.modal-body h4 {
   font-weight: 600;
   font-size: var(--text-sm);
   margin-top: var(--space-lg);
@@ -553,7 +561,7 @@ body.light .modal-header .btn-close {
 }
 
 /* Linha divisória elegante */
-.modal-body h6::after {
+.modal-body h4::after {
   content: "";
   display: block;
   width: 48px;
@@ -671,4 +679,17 @@ body,
 .filter-btn.active {
   background-color: var(--accent);
   color: var(--bg);
+}
+
+/* ==========================
+   ACESSIBILIDADE
+========================== */
+.skip-link {
+  position: absolute;
+  left: -999px;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
 }
