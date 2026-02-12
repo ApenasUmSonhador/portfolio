@@ -86,7 +86,10 @@ ul {
   margin: 0;
 }
 
-
+button {
+  all: unset;
+  cursor: pointer;
+}
 
 /* ==========================
    NAVBAR — ISOLADA DO BOOTSTRAP
