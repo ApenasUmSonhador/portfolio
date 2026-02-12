@@ -583,7 +583,6 @@ body.light .modal-header .btn-close {
 
 /* Listas */
 .modal-body ul {
-  padding-left: 1rem;
   margin-bottom: var(--space-md);
 }
 
