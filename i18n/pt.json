@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "title": "Arthur Nunes | Desenvolvedor Full Stack | Portfólio",
+
+    "description": "Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.js e PostgreSQL. Veja projetos, experiência e contato.",
+
+    "author": "Arthur Nunes",
+
+    "keywords": "Arthur Nunes, Desenvolvedor Full Stack, Portfólio, Projetos, Skills, Stacks, React, Node.js, JavaScript, TypeScript, PostgreSQL",
+
+    "og": {
+      "title": "Arthur Nunes | Desenvolvedor Full Stack | Portfólio",
+
+      "description": "Portfólio profissional de Arthur Nunes, Desenvolvedor Full Stack. Projetos, skills e stacks.",
+
+      "siteName": "Arthur Nunes Portfolio"
+    },
+
+    "twitter": {
+      "card": "summary_large_image",      
+      "title": "Arthur Nunes | Desenvolvedor Full Stack | Portfólio",
+      "description": "Portfólio profissional de Arthur Nunes, Desenvolvedor Full Stack. Projetos, skills e stacks."
+    }
+  },
+
+  "schema": {
+    "jobTitle": "Desenvolvedor Full Stack"
+  },
+
+  "skip": {
+    "content": "Pular para o conteúdo principal"
+  },
+
+  "nav": {
+    "home": "Home",
+    "skills": "Skills",
+    "stacks": "Stacks",
+    "projects": "Projetos",
+    "about": "Sobre",
+    "resume": "Currículo"
+  },
+
+  "hero": {
+    "title": "Eleve seu negócio a outro nível com um",
+    "highlight": "Full Stack de qualidade",
+    "saudation": "Olá! Sou ",
+    "name": "Arthur Nunes",
+    "jobTitle": "Desenvolvedor",
+    "jobStack": "Full Stack",
+    "description": "com experiência em construir aplicações modernas, escaláveis e eficientes. Ajudo empresas a transformar sonhos em código. Vamos conversar?"
+  },
+
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Tecnologias que utilizo no dia a dia",
+
+    "filter": {
+      "all": "Todas",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "tools": "Tools & DevOps"
+    }
+  },
+
+  "stacks": {
+    "title": "Stacks",
+    "subtitle": "Como transformo tecnologia em soluções reais",
+
+    "frontend": {
+      "title": "Frontend Engineering",
+      "desc": "Desenvolvimento de interfaces responsivas, acessíveis e orientadas a componentes, com foco em experiência do usuário e performance."
+    },
+
+    "backend": {
+      "title": "Backend & APIs",
+      "desc": "Criação de APIs RESTful, autenticação, regras de negócio e integração com bancos de dados relacionais."
+    },
+
+    "data": {
+      "title": "Data & Persistence",
+      "desc": "Modelagem de dados, SQL, migrações, integridade relacional e camadas de acesso bem definidas."
+    },
+
+    "devops": {
+      "title": "DevOps & Workflow",
+      "desc": "Versionamento com Git Flow, ambientes com Docker, automação e boas práticas de entrega contínua."
+    }
+  },
+
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Alguns projetos que demonstram minhas habilidades na prática.",
+
+    "filter": {
+      "all": "Todos",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database"
+    },
+
+    "buttons": {
+      "demo": "Demo",
+      "github": "GitHub",
+      "case": "Ver case",
+      "review": "Review em vídeo"
+    },
+
+    "todo": {
+      "alt": "Preview do projeto To-Do List",
+
+      "title": "To-Do List Full Stack",
+
+      "description": "Aplicação completa com React, Material UI e TypeScript no frontend, Node.js, Express, Prisma e PostgreSQL no backend, incluindo autenticação JWT.",
+
+      "modal": {
+        "title": "To-Do List Full Stack — Case",
+
+        "problem": {
+          "title": "💡 Problema",
+          "text": "Aplicações simples de gerenciamento de tarefas geralmente não oferecem autenticação segura, persistência de dados confiável ou separação clara entre frontend e backend, dificultando a escalabilidade e manutenção do sistema à medida que ele cresce."
+        },
+
+        "solution": {
+          "title": "🛠️ Solução",
+          "text1": "Foi desenvolvida uma aplicação ",
+          "highlight1": "Full Stack",
+          "text2": " com frontend desacoplado e backend em forma de ",
+          "highlight2": "API REST",
+          "text3":  ", permitindo autenticação de usuários, gerenciamento completo de tarefas (CRUD) e persistência segura dos dados.",
+          "text4": "O frontend atua como uma ",
+          "highlight3": "SPA",
+          "text5": ", consumindo a API via Axios, enquanto o backend centraliza regras de negócio, autenticação e acesso ao banco de dados."
+        },
+
+        "tech": {
+          "title": "🧠 Decisões Técnicas",
+
+          "highlight1": "TypeScript",
+          "text1": " em toda a aplicação para maior segurança, legibilidade e redução de erros em tempo de desenvolvimento. ",
+          "highlight2": "JWT",
+          "text2": "  para autenticação stateless, facilitando escalabilidade e integração futura com outros clientes.",
+          "highlight3": "Prisma ORM",
+          "text3": " para modelagem e acesso ao banco de dados, garantindo tipagem forte e migrações controladas.",
+          "highlight4": "Separação clara de responsabilidades",
+          "text4": " entre frontend e backend, seguindo boas práticas de arquitetura. "
+          },
+
+        "result": {
+          "title": "📈 Resultado",
+          "text": "O projeto resultou em uma aplicação funcional, segura e extensível, servindo como base sólida para futuras evoluções, como permissões por usuário, novos tipos de tarefas ou integração com outros serviços. "
+        },
+
+        "next": {
+          "title": "🚀 Evoluções Futuras",
+          "text": "Implementação de permissões, testes automatizados, cache de requisições e deploy com Docker."
+        }
+      }
+    },
+
+    "portfolio": {
+      "alt": "Preview of the Professional Portfolio project",
+      
+      "title": "Portfólio Profissional",
+
+      "review": "Review em vídeo · Karol Attekita",
+
+      "description": "Portfólio profissional desenvolvido com HTML, CSS, JavaScript e Bootstrap, apresentando design responsivo, modo claro/escuro e animações suaves para uma experiência moderna. ",
+
+      "modal": {
+        "title": "Portfólio Profissional — Case",
+
+        "problem": {
+          "title": "💡 Problema",
+          "text": "Muitos portfólios de desenvolvedores apresentam apenas informações estáticas, com pouca preocupação em experiência do usuário, acessibilidade, organização do conteúdo ou reutilização de componentes, o que dificulta transmitir maturidade técnica e identidade profissional."
+        },
+
+        "solution": {
+          "title": "🛠️ Solução",
+          "text1": "Foi desenvolvido um ",
+          "highlight1": "portfólio profissional responsivo",
+          "text2": ", pensado como um produto.",
+          "text3": "A aplicação adota abordagem , modo claro/escuro e estrutura modular.",
+          "highlight2": "mobile-first",
+          "text4": " integra ",
+          "highlight3": "modo claro e escuro",
+          "text5": " e usa uma ",
+          "highlight4": "estrutura modular",
+          "text6": " para facilitar manutenção e evolução futura."
+        },
+
+        "tech": {
+          "title": "🧠 Decisões Técnicas",
+
+          "highlight1": "Bootstrap 5",
+          "text1": " para garantir responsividade, consistência visual e produtividade no layout.",
+          "highlight2": "Design system baseado em variáveis CSS",
+          "text2": " para permitir alternância de tema (dark/light) sem duplicação de estilos.",
+          "highlight3": "Animações suaves com CSS e JavaScript",
+          "text3": " para melhorar a percepção de qualidade sem comprometer performance.",
+          "highlight4": "Prioridade em performance, simplicidade e controle total do código",
+          "text4": ", utilizando estrutura sem dependência de frameworks pesados."
+        },
+
+        "result": {
+          "title": "📈 Resultado",
+          "text1": " O resultado é um portfólio moderno, legível e profissional, que comunica não apenas projetos, mas também",
+          "highlight": "boas práticas de frontend",
+          "text2": " atenção a detalhes e preocupação com experiência do usuário."
+        },
+
+        "next": {
+          "title": "🚀 Evoluções Futuras",
+          "text": "Internacionalização, otimizações de acessibilidade (a11y), geração de conteúdo dinâmico e migração para um framework frontend caso necessário."
+        }
+      }
+    }
+
+  },
+
+  "about": {
+    "title": "Sobre mim",
+
+    "p1": { 
+      "jobTitle": "Desenvolvedor Full Stack",
+      "text1": " com mais de  ",
+      "yearsOfExperience": "2 anos",
+      "text2": " de experiência no desenvolvimento de aplicações web modernas, escaláveis e orientadas a boas práticas de engenharia de software. Atuo principalmente com o ecossistema ",
+      "highlight1": "JavaScript/TypeScript",
+      "text3":", criando interfaces ricas e responsivas no frontend e arquiteturas robustas no backend."
+    },
+    
+    "p2":{
+      "text1": "Tenho sólida experiência em ",
+      "highlight1": "React",
+      "text2": " e ",
+      "highlight2": "Vue.js",
+      "text3": ", desenvolvimento de ",
+      "highlight3": "APIs RESTful com Node.js",
+      "text4": ", autenticação, modelagem de dados e integração com bancos relacionais como ",
+      "highlight4": "PostgreSQL",
+      "text5": " e ",
+      "highlight5": "MySQL",
+      "text6": ", utilizando ferramentas como ",
+      "highlight6": "Prisma ORM",
+      "text7": ". Também possuo vivência prática com ",
+      "highlight7": "Docker",
+      "text8": ", versionamento com ",
+      "highlight8": "Git Flow",
+      "text9": " e fluxos de trabalho Ágeis."
+    },
+    
+
+    "p3": {
+      "text1": "Atualmente curso ",
+      "highlight1": "Bacharelado em Ciência da Computação",
+      "text2": " pela ",
+      "highlight2": "Universidade Federal do Ceará",
+      "text3": "  e busco constantemente evoluir tecnicamente, com foco em",
+      "highlight3":  "arquitetura de sistemas, código limpo e soluções que gerem impacto real.",
+      "text4": " Valorizo colaboração, comunicação clara e aprendizado contínuo."
+    },
+
+    "interests": {
+      "title": "Áreas de interesse",
+      "list": "Desenvolvimento Web • Arquitetura de Software • Sistemas Escaláveis • Engenharia de Software • UX • Aprendizado Contínuo"
+    },
+
+    "study": {
+      "title": "Estudando no momento",
+      "list": "Vim Motions • C++ • Estrutura de Dados e Algoritmos"
+    }
+  },
+
+  "footer": {
+    "copyright": "© 2026 Arthur Nunes • Full Stack Developer"
+  }
+}

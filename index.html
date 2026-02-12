@@ -1,30 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br" itemscope itemtype="https://schema.org/Person">
+<html lang="" itemscope itemtype="https://schema.org/Person">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Arthur Nunes | Desenvolvedor Full Stack | Portfólio</title>
+  <title data-i18n="meta.title"></title>
 
-  <!--- Meta Tags -->
-  <meta name="description"
-content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.js e PostgreSQL. Veja projetos, experiência e contato." />
-  <meta name="author" content="Arthur Nunes" />
-  <meta name="keywords" content="Arthur Nunes, Desenvolvedor Full Stack, Portfólio, Projetos, Skills, Stacks, React, Node.js, JavaScript, TypeScript, PostgreSQL" />
-  <meta property="og:title" content="Arthur Nunes | Desenvolvedor Full Stack | Portfólio" />
-  <meta property="og:image" content="https://apenasumsonhador.github.io/portfolio/assets/image-light.webp" />
+  <meta name="description" data-i18n="meta.description" />
+  <meta name="author" data-i18n="meta.author" />
+  <meta name="keywords" data-i18n="meta.keywords" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" data-i18n="meta.og.title" />
+  <meta property="og:description" data-i18n="meta.og.description" />
+  <meta property="og:site_name" data-i18n="meta.og.siteName" />
+
+  <meta property="og:image"
+    content="https://apenasumsonhador.github.io/portfolio/assets/image-light.webp" />
+
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://apenasumsonhador.github.io/portfolio/" />
-  <meta property="og:description" content="Portfólio profissional de Arthur Nunes, Desenvolvedor Full Stack. Projetos, skills e stacks." />
+  <meta property="og:url"
+    content="https://apenasumsonhador.github.io/portfolio/" />
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://apenasumsonhador.github.io/portfolio/assets/image-light.webp" />
-  
-  <!-- WhatsApp Meta Tags -->
-  <meta property="og:site_name" content="Arthur Nunes Portfolio" />
+  <!-- Twitter -->
+   <meta name="twitter:title" data-i18n="meta.twitter.title">
+  <meta name="twitter:description" data-i18n="meta.twitter.description">
+  <meta name="twitter:card" data-i18n="meta.twitter.card" />
+  <meta name="twitter:image"
+    content="https://apenasumsonhador.github.io/portfolio/assets/image-light.webp" />
+
+  <!-- Apple / Mobile -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
 
   <!-- Bootstrap 5 -->
@@ -40,32 +47,38 @@ content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.j
   />
 
   <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- CSS customizado -->
+  <!-- Customized CSS  -->
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />        
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
 
-  <script type="application/ld+json">
+  <script type="application/ld+json" id="schemaData">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Arthur Nunes",
     "url": "https://apenasumsonhador.github.io/portfolio/",
-    "jobTitle": "Desenvolvedor Full Stack",
+    "jobTitle": "",
     "sameAs": [
       "https://www.linkedin.com/in/arthurvininunes/",
       "https://github.com/ApenasUmSonhador"
     ]
   }
   </script>
+  <style>
+    html {
+      opacity: 0;
+    }
+  </style>
 </head>
 
 <body>
 <!-- Skip link for accessibility -->
-<a href="#home" class="skip-link">
-  Pular para o conteúdo
+<a href="#home" data-i18n="skip.content" class="skip-link">
 </a>
 
 <header>
@@ -84,15 +97,16 @@ content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.j
 
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-4">
-          <li class="nav-item"><a class="nav-link fade-up" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link fade-up" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link fade-up" href="#stacks">Stacks</a></li>
-          <li class="nav-item"><a class="nav-link fade-up" href="#projects">Projetos</a></li>
-          <li class="nav-item"><a class="nav-link fade-up" href="#about">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link fade-up" href="#home" data-i18n="nav.home"></a></li>
+          <li class="nav-item"><a class="nav-link fade-up" href="#skills" data-i18n="nav.skills"></a></li>
+          <li class="nav-item"><a class="nav-link fade-up" href="#stacks" data-i18n="nav.stacks"></a></li>
+          <li class="nav-item"><a class="nav-link fade-up" href="#projects" data-i18n="nav.projects"></a></li>
+          <li class="nav-item"><a class="nav-link fade-up" href="#about" data-i18n="nav.about"></a></li>
           <li class="nav-item">
             <a class="nav-link fade-up" target="_blank" rel="noopener noreferrer"
-              href="https://apenasumsonhador.github.io/Curriculum-Vitae/">
-              Currículo
+              href="https://apenasumsonhador.github.io/Curriculum-Vitae/"
+              data-i18n="nav.resume"
+              >
             </a>
           </li>
         </ul>
@@ -105,6 +119,13 @@ content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.j
       >
         🌙
       </button>
+      <button
+        id="langToggle"
+        class="btn btn-sm btn-outline-gold ms-2 fade-up"
+        aria-label="Alternar idioma"
+      >
+        🌐 PT
+      </button>
     </div>
   </nav>
 
@@ -114,18 +135,19 @@ content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.j
     <div class="container">
       <div class="row align-items-center gy-5">
 
-        <!-- TEXTO -->
+        <!-- Text -->
         <div class="col-12 col-lg-6 text-center text-lg-start">
           <h1 class="hero-title fade-up">
-            Eleve seu negócio a outro nível com um
-            <span class="text-gold">Full Stack de qualidade</span>
+            <span data-i18n="hero.title"></span>
+            <span class="text-gold" data-i18n="hero.highlight"></span>
           </h1>
 
           <p class="hero-text mt-4 fade-up" itemprop="description">
-            Olá! Sou <strong>Arthur Nunes</strong>, <span itemprop="jobTitle">Desenvolvedor <strong>Full Stack</strong></span> 
-            com experiência em construir aplicações modernas, escaláveis e eficientes. 
-            Ajudo empresas a transformar sonhos em código. 
-            Vamos conversar?
+            <span data-i18n="hero.saudation"></span>
+            <strong data-i18n="hero.name"></strong>, 
+            <span itemprop="jobTitle" data-i18n="hero.jobTitle"></span> 
+            <strong data-i18n="hero.jobStack"></strong>
+            <span data-i18n="hero.description"></span>
           </p>
 
           <div class="d-flex flex-column flex-sm-row gap-3 mt-4 justify-content-center justify-content-lg-start fade-up">
@@ -150,7 +172,7 @@ content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.j
           </div>
         </div>
 
-        <!-- IMAGEM -->
+        <!-- IMAGE -->
         <figure class="col-12 col-lg-6 text-center fade-up">
           <img 
             src="assets/foto-perfil.webp" 
@@ -171,33 +193,26 @@ content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.j
   <section id="skills" class="skills py-5">
     <div class="container fade-up">
       <header class="text-center">
-        <h2 class="mb-3">Skills</h2>
-        <p class="mb-4">
-            Tecnologias que utilizo no dia a dia
-        </p>
+        <h2 class="mb-3" data-i18n="skills.title"></h2>
+        <p class="mb-4" data-i18n="skills.subtitle"></p>
       </header>
       
 
-      <!-- FILTROS -->
+      <!-- FILTERS -->
       <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-        <button class="btn btn-outline-gold btn-sm skill-filter active" data-filter="all">
-          Todas
+        <button class="btn btn-outline-gold btn-sm skill-filter active" data-filter="all" data-i18n="skills.filter.all">
         </button>
-        <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="frontend">
-          Frontend
+        <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="frontend" data-i18n="skills.filter.frontend">
         </button>
-        <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="backend">
-          Backend
+        <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="backend" data-i18n="skills.filter.backend">
         </button>
-        <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="database">
-          Database
+        <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="database" data-i18n="skills.filter.database">
         </button>
-        <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="tools">
-          Tools & DevOps
+        <button class="btn btn-outline-gold btn-sm skill-filter" data-filter="tools" data-i18n="skills.filter.tools">
         </button>
       </div>
 
-      <!-- CARROSSEL -->
+      <!-- CAROUSEL -->
       <div class="skills-carousel-wrapper">
         <ul class="skills-carousel">
 
@@ -391,83 +406,63 @@ content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.j
   <section id="stacks" class="py-5">
     <div class="container">
 
-      <h2 class="text-center mb-3 fade-up">Stacks</h2>
-      <p class="text-center mb-5 fade-up">
-        Como transformo tecnologia em soluções reais
-      </p>
+      <h2 class="text-center mb-3 fade-up" data-i18n="stacks.title"></h2>
+      <p class="text-center mb-5 fade-up" data-i18n="stacks.subtitle"></p>
 
       <div class="row g-4">
 
-        <!-- Stacks -->
+        <!-- Cards -->
         <div class="col-12 col-md-6 col-lg-3 fade-up">
           <div class="card h-100 p-4 text-center">
-            <h3 class="text-gold">Frontend Engineering</h3>
-            <p>
-              Desenvolvimento de interfaces responsivas, acessíveis e orientadas
-              a componentes, com foco em experiência do usuário e performance.
-            </p>
+            <h3 class="text-gold" data-i18n="stacks.frontend.title"></h3>
+            <p data-i18n="stacks.frontend.desc"></p>
           </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-3 fade-up">
           <div class="card h-100 p-4 text-center">
-            <h3 class="text-gold">Backend & APIs</h3>
-            <p>
-              Criação de APIs RESTful, autenticação, regras de negócio e
-              integração com bancos de dados relacionais.
-            </p>
+            <h3 class="text-gold" data-i18n="stacks.backend.title"></h3>
+            <p data-i18n="stacks.backend.desc"></p>
           </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-3 fade-up">
           <div class="card h-100 p-4 text-center">
-            <h3 class="text-gold">Data & Persistence</h3>
-            <p>
-              Modelagem de dados, SQL, migrações, integridade relacional
-              e camadas de acesso bem definidas.
-            </p>
+            <h3 class="text-gold" data-i18n="stacks.data.title"></h3>
+            <p data-i18n="stacks.data.desc"></p>
           </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-3 fade-up">
           <div class="card h-100 p-4 text-center">
-            <h3 class="text-gold">DevOps & Workflow</h3>
-            <p>
-              Versionamento com Git Flow, ambientes com Docker,
-              automação e boas práticas de entrega contínua.
-            </p>
+            <h3 class="text-gold" data-i18n="stacks.devops.title"></h3>
+            <p data-i18n="stacks.devops.desc"></p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJETOS -->
+  <!-- PROJECTS -->
   <section id="projects" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-4 fade-up">Projetos</h2>
-      <p class="text-center mb-5 fade-up">
-        Alguns projetos que demonstram minhas habilidades na prática.
-      </p>
+      <h2 class="text-center mb-4 fade-up" data-i18n="projects.title"></h2>
+      <p class="text-center mb-5 fade-up" data-i18n="projects.subtitle"></p>
 
       <div class="d-flex flex-wrap justify-content-center gap-2 mb-4 fade-up">
-        <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="all">
-          Todos
+        <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="all" data-i18n="projects.filter.all">
         </button>
-        <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="frontend">
-          Frontend
+        <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="frontend" data-i18n="projects.filter.frontend">
         </button>
-        <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="backend">
-          Backend
+        <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="backend" data-i18n="projects.filter.backend">
         </button>
-        <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="database">
-          Database
+        <button class="btn btn-outline-gold btn-sm filter-btn" data-filter="database" data-i18n="projects.filter.database">
         </button>
       </div>
 
       <div class="row g-4">
 
-        <!-- To-Do List Fullstack -->
+        <!-- To-Do List -->
         <article 
           class="col-12 col-md-6 col-lg-4 fade-up project-item"
           data-category="frontend backend database auth"
@@ -482,20 +477,20 @@ content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.j
             >
               <img 
                 src="assets/to-do-list-repo.webp"
-                alt="Preview do projeto To-Do List"
+                data-i18n-alt="projects.todo.alt"
                 loading="lazy"
                 >
             </button>
 
             <div class="p-3 d-flex flex-column h-100">
-              <h3 class="text-gold">To-Do List Fullstack</h3>
+              <h3 class="text-gold" data-i18n="projects.todo.title"></h3>
 
               <!-- TAGS -->
               <ul class="d-flex flex-wrap gap-2 mb-3">
                 <!-- Stack Badges -->
-                <li><span class="badge badge-frontend">Frontend</span></li>
-                <li><span class="badge badge-backend">Backend</span></li>
-                <li><span class="badge badge-database">Database</span></li>
+                <li><span class="badge badge-frontend" data-i18n="projects.filter.frontend"></span></li>
+                <li><span class="badge badge-backend" data-i18n="projects.filter.backend"></span></li>
+                <li><span class="badge badge-database" data-i18n="projects.filter.database"></span></li>
                 
                 <!-- Tech Badges -->
                 <li><span class="badge badge-auth">Auth</span></li>
@@ -510,23 +505,18 @@ content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.j
                 <li><span class="badge badge-js">JavaScript</span></li>
               </ul>
 
-              <p>
-                Aplicação completa com React, Material UI e TypeScript no frontend, 
-                Node.js, Express, Prisma e PostgreSQL no backend, incluindo autenticação JWT.
-              </p>
+              <p data-i18n="projects.todo.description"></p>
 
               <div class="mt-auto d-flex gap-2">
-                <a class="btn btn-outline-gold btn-sm disabled">Demo</a>
+                <a class="btn btn-outline-gold btn-sm disabled" data-i18n="projects.buttons.demo"></a>
                 <a 
                   class="btn btn-outline-gold btn-sm"
                   href="https://github.com/ApenasUmSonhador/React-Node.js-to-do-list"
                   target="_blank"
                   rel="noopener noreferrer"
-                >
-                  GitHub
-                </a>
-                <button class="btn btn-outline-gold btn-sm" data-bs-toggle="modal" data-bs-target="#caseTodo">
-                  Ver case
+                  data-i18n="projects.buttons.github"
+                ></a>
+                <button class="btn btn-outline-gold btn-sm" data-bs-toggle="modal" data-bs-target="#caseTodo" data-i18n="projects.buttons.case">
                 </button>              
               </div>
             </div>
@@ -538,67 +528,55 @@ content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.j
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
           <div class="modal-content">
             <div class="modal-header">
-              <h3 class="modal-title text-gold">To-Do List Full Stack — Case</h3>
+              <h3 class="modal-title text-gold" data-i18n="projects.todo.modal.title"></h3>
               <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
-            <!-- === Texto === -->
+            <!-- === Text Modal === -->
             <div class="modal-body">
 
-              <h4>Problema</h4>
+              <h4 data-i18n="projects.todo.modal.problem.title"></h4>
+              <p data-i18n="projects.todo.modal.problem.text"></p>
+
+              <h4 data-i18n="projects.todo.modal.solution.title"></h4>
               <p>
-                Aplicações simples de gerenciamento de tarefas geralmente não oferecem
-                autenticação segura, persistência de dados confiável ou separação clara
-                entre frontend e backend, dificultando a escalabilidade e manutenção
-                do sistema à medida que ele cresce.
+                <span data-i18n="projects.todo.modal.solution.text1"></span>
+                <strong data-i18n="projects.todo.modal.solution.highlight1"></strong>
+                <span data-i18n="projects.todo.modal.solution.text2"></span>
+                <strong data-i18n="projects.todo.modal.solution.highlight2"></strong>
+                <span data-i18n="projects.todo.modal.solution.text3"></span>
+              </p>
+              <p>
+                <span data-i18n="projects.todo.modal.solution.text4"></span>
+                <strong data-i18n="projects.todo.modal.solution.highlight3"></strong>
+                <span data-i18n="projects.todo.modal.solution.text5"></span>
               </p>
 
-              <h4>🛠️ Solução</h4>
-              <p>
-                Foi desenvolvida uma aplicação <strong>Full Stack</strong> com frontend
-                desacoplado e backend em forma de <strong>API REST</strong>, permitindo
-                autenticação de usuários, gerenciamento completo de tarefas (CRUD)
-                e persistência segura dos dados.
-              </p>
-
-              <p>
-                O frontend atua como uma <strong>SPA</strong>, consumindo a API via Axios,
-                enquanto o backend centraliza regras de negócio, autenticação e acesso
-                ao banco de dados.
-              </p>
-
-              <h4>🧠 Decisões Técnicas</h4>
+              <h4 data-i18n="projects.todo.modal.tech.title"></h4>
               <ul>
                 <li>
-                  <strong>TypeScript</strong> em toda a aplicação para maior segurança,
-                  legibilidade e redução de erros em tempo de desenvolvimento.
+                  <strong data-i18n="projects.todo.modal.tech.highlight1"></strong>
+                  <span data-i18n="projects.todo.modal.tech.text1"></span>
                 </li>
                 <li>
-                  <strong>JWT</strong> para autenticação stateless, facilitando escalabilidade
-                  e integração futura com outros clientes.
+                  <strong data-i18n="projects.todo.modal.tech.highlight2"></strong>
+                  <span data-i18n="projects.todo.modal.tech.text2"></span>
                 </li>
                 <li>
-                  <strong>Prisma ORM</strong> para modelagem e acesso ao banco de dados,
-                  garantindo tipagem forte e migrações controladas.
+                  <strong data-i18n="projects.todo.modal.tech.highlight3"></strong>
+                  <span data-i18n="projects.todo.modal.tech.text3"></span>
                 </li>
                 <li>
-                  <strong>Separação clara de responsabilidades</strong> entre frontend e backend,
-                  seguindo boas práticas de arquitetura.
+                  <strong data-i18n="projects.todo.modal.tech.highlight4"></strong>
+                  <span data-i18n="projects.todo.modal.tech.text4"></span>
                 </li>
               </ul>
 
-              <h4>📈 Resultado</h4>
-              <p>
-                O projeto resultou em uma aplicação funcional, segura e extensível,
-                servindo como base sólida para futuras evoluções, como permissões por usuário,
-                novos tipos de tarefas ou integração com outros serviços.
-              </p>
+              <h4 data-i18n="projects.todo.modal.result.title"></h4>
+              <p data-i18n="projects.todo.modal.result.text"></p>
 
-              <h4>🚧 Próximos Passos</h4>
-              <p>
-                Implementação de permissões, testes automatizados,
-                cache de requisições e deploy com Docker.
-              </p>
+              <h4 data-i18n="projects.todo.modal.next.title"></h4>
+              <p data-i18n="projects.todo.modal.next.text"></p>
 
             </div>
           </div>
@@ -621,13 +599,13 @@ content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.j
             >
               <img 
                 src="assets/image-light.webp"
-                alt="Preview do projeto Portfolio Frontend"
+                data-i18n-alt="projects.portfolio.alt"
                 loading="lazy"
               >
             </button>
 
             <div class="p-3 d-flex flex-column h-100">
-              <h3 class="text-gold">Portfólio Profissional</h3>
+              <h3 class="text-gold" data-i18n="projects.portfolio.title"></h3>
               <a
                 href="https://youtu.be/d8MReiqqElE?si=x-Q66p4MdUSd14Vh&t=374"
                 target="_blank"
@@ -636,13 +614,13 @@ content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.j
                 title="Ver review em vídeo"
               >
                 <i class="bi bi-play-circle-fill"></i>
-                Review em vídeo · Karol Attekita
+                <span data-i18n="projects.portfolio.review"></span>
               </a>
 
               <!-- TAGS -->
               <ul class="d-flex flex-wrap gap-2 mb-3">
                 <!-- Stack Badges -->
-                <li><span class="badge badge-frontend">Frontend</span></li>
+                <li><span class="badge badge-frontend" data-i18n="projects.filter.frontend"></span></li>
 
                 <!-- Tech Badges -->
                 <li><span class="badge badge-html">HTML</span></li>
@@ -652,9 +630,7 @@ content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.j
 
               </ul>
 
-              <p>
-                Portfólio profissional desenvolvido com HTML, CSS, JavaScript e Bootstrap, 
-                apresentando design responsivo, modo claro/escuro e animações suaves para uma experiência moderna.
+              <p data-i18n="projects.portfolio.description"></p>
               </p>
 
               <div class="mt-auto d-flex gap-2">
@@ -663,20 +639,19 @@ content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.j
                   href="https://apenasumsonhador.github.io/portfolio/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-i18n="projects.buttons.demo"
                   >
-                  Demo
                 </a>
                 <a 
                   class="btn btn-outline-gold btn-sm"
                   href="https://github.com/ApenasUmSonhador/portfolio"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-i18n="projects.buttons.github"
                 >
-                  GitHub
                 </a>
 
-                <button class="btn btn-outline-gold btn-sm" data-bs-toggle="modal" data-bs-target="#casePortfolio">
-                  Ver case
+                <button class="btn btn-outline-gold btn-sm" data-bs-toggle="modal" data-bs-target="#casePortfolio" data-i18n="projects.buttons.case">
                 </button>
               </div>
             </div>
@@ -689,67 +664,62 @@ content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.j
           <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h3 class="modal-title text-gold">Portfólio Profissional — Case</h3>
+                <h3 class="modal-title text-gold" data-i18n="projects.portfolio.title"></h3>
                 <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
 
-              <!-- === Texto === -->
+              <!-- === Text === -->
               <div class="modal-body">
 
-                <h4>Problema</h4>
+                <h4 data-i18n="projects.portfolio.modal.problem.title"></h4>
+                <p data-i18n="projects.portfolio.modal.problem.text"></p>
+
+                <h4 data-i18n="projects.portfolio.modal.solution.title"></h4>
                 <p>
-                  Muitos portfólios de desenvolvedores apresentam apenas informações estáticas,
-                  com pouca preocupação em experiência do usuário, acessibilidade, organização
-                  do conteúdo ou reutilização de componentes, o que dificulta transmitir
-                  maturidade técnica e identidade profissional.
+                  <span data-i18n="projects.portfolio.modal.solution.text1"></span>
+                  <strong data-i18n="projects.portfolio.modal.solution.highlight1"></strong>
+                  <span data-i18n="projects.portfolio.modal.solution.text2"></span>
+                </p>
+                <p>
+                  <span data-i18n="projects.portfolio.modal.solution.text3"></span>
+                  <strong data-i18n="projects.portfolio.modal.solution.highlight2"></strong>
+                  <span data-i18n="projects.portfolio.modal.solution.text4"></span>
+                  <strong data-i18n="projects.portfolio.modal.solution.highlight3"></strong>
+                  <span data-i18n="projects.portfolio.modal.solution.text5"></span>
+                  <strong data-i18n="projects.portfolio.modal.solution.highlight4"></strong>
+                  <span data-i18n="projects.portfolio.modal.solution.text6"></span>
                 </p>
 
-                <h4>🛠️ Solução</h4>
-                <p>
-                  Foi desenvolvido um <strong>portfólio profissional responsivo</strong>,
-                  pensado como um produto, com foco em clareza, legibilidade e experiência
-                  consistente em diferentes dispositivos.
-                </p>
-
-                <p>
-                  A aplicação adota uma abordagem <strong>mobile-first</strong>, integra
-                  <strong>modo claro e escuro</strong>, animações sutis e uma estrutura
-                  modular que facilita manutenção e evolução futura.
-                </p>
-
-                <h4>🧠 Decisões Técnicas</h4>
+                <h4 data-i18n="projects.portfolio.modal.tech.title"></h4>
                 <ul>
                   <li>
-                    Uso de <strong>Bootstrap 5</strong> para garantir responsividade,
-                    consistência visual e produtividade no layout.
+                    <strong data-i18n="projects.portfolio.modal.tech.highlight1"></strong>
+                    <span data-i18n="projects.portfolio.modal.tech.text1"></span>
                   </li>
                   <li>
-                    Criação de um <strong>design system baseado em variáveis CSS</strong>,
-                    permitindo alternância de tema (dark/light) sem duplicação de estilos.
+                    <strong data-i18n="projects.portfolio.modal.tech.highlight2"></strong>
+                    <span data-i18n="projects.portfolio.modal.tech.text2"></span>
                   </li>
                   <li>
-                    Animações suaves com <strong>CSS e JavaScript</strong> para melhorar
-                    a percepção de qualidade sem comprometer performance.
+                    <strong data-i18n="projects.portfolio.modal.tech.highlight3"></strong>
+                    <span data-i18n="projects.portfolio.modal.tech.text3"></span>
                   </li>
                   <li>
-                    Estrutura sem dependência de frameworks pesados, priorizando
-                    <strong>performance, simplicidade e controle total do código</strong>.
+                    
+                    <strong data-i18n="projects.portfolio.modal.tech.highlight4"></strong>
+                    <span data-i18n="projects.portfolio.modal.tech.text4"></span>
                   </li>
                 </ul>
 
-                <h4>📈 Resultado</h4>
+                <h4 data-i18n="projects.portfolio.modal.result.title"></h4>
                 <p>
-                  O resultado é um portfólio moderno, legível e profissional, que comunica
-                  não apenas projetos, mas também <strong>boas práticas de frontend</strong>,
-                  atenção a detalhes e preocupação com experiência do usuário.
+                  <span data-i18n="projects.portfolio.modal.result.text1"></span>
+                  <strong data-i18n="projects.portfolio.modal.result.highlight"></strong>
+                  <span data-i18n="projects.portfolio.modal.result.text2"></span>
                 </p>
 
-                <h4>🚀 Evoluções Futuras</h4>
-                <p>
-                  Internacionalização, otimizações de acessibilidade (a11y),
-                  geração de conteúdo dinâmico e migração para um framework
-                  frontend caso necessário.
-                </p>
+                <h4 data-i18n="projects.portfolio.modal.next.title"></h4>
+                <p data-i18n="projects.portfolio.modal.next.text"></p>
 
               </div>
 
@@ -760,35 +730,49 @@ content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.j
     </div>
   </section>
 
-  <!-- SOBRE -->
+  <!-- ABOUT -->
   <section id="about" class="py-5">
     <div class="container">
       <div class="row align-items-center gy-4">
 
         <div class="col-12 col-lg-6 fade-up">
-          <h2>Sobre mim</h2>
+          <h2 data-i18n="about.title"></h2>
 
           <p class="mt-3">
-            Sou <strong>Desenvolvedor Full Stack</strong> com mais de <strong>2 anos de experiência profissional</strong> 
-            no desenvolvimento de aplicações web modernas, escaláveis e orientadas a boas práticas de engenharia de software.
-            Atuo principalmente com o ecossistema <strong>JavaScript/TypeScript</strong>, criando interfaces ricas e responsivas 
-            no frontend e arquiteturas robustas no backend.
+            <strong data-i18n="about.p1.jobTitle"></strong><span data-i18n="about.p1.text1"></span>
+            <strong data-i18n="about.p1.yearsOfExperience"></strong>
+            <span data-i18n="about.p1.text2"></span>
+            <strong data-i18n="about.p1.highlight1"></strong><span data-i18n="about.p1.text3"></span>
           </p>
 
           <p>
-            Tenho forte experiência em <strong>React</strong> e <strong>Vue.js</strong>, desenvolvimento de 
-            <strong>APIs RESTful com Node.js</strong>, autenticação, modelagem de dados e integração com 
-            bancos relacionais como <strong>PostgreSQL</strong> e <strong>MySQL</strong>, utilizando 
-            ferramentas como <strong>Prisma ORM</strong>. Também possuo vivência prática com 
-            <strong>Docker</strong>, versionamento com <strong>Git Flow</strong> e fluxos de trabalho Ágeis.
+            <span data-i18n="about.p2.text1"></span>
+            <strong data-i18n="about.p2.highlight1"></strong>
+            <span data-i18n="about.p2.text2"></span>
+            <strong data-i18n="about.p2.highlight2"></strong>
+            <span data-i18n="about.p2.text3"></span>
+            <strong data-i18n="about.p2.highlight3"></strong>
+            <span data-i18n="about.p2.text4"></span>
+            <strong data-i18n="about.p2.highlight4"></strong>
+            <span data-i18n="about.p2.text5"></span>
+            <strong data-i18n="about.p2.highlight5"></strong>
+            <span data-i18n="about.p2.text6"></span>
+            <strong data-i18n="about.p2.highlight6"></strong>
+            <span data-i18n="about.p2.text7"></span>
+            <strong data-i18n="about.p2.highlight7"></strong>
+            <span data-i18n="about.p2.text8"></span>
+            <strong data-i18n="about.p2.highlight8"></strong>
+            <span data-i18n="about.p2.text9"></span>
           </p>
 
           <p>
-            Atualmente curso <strong>Bacharelado em Ciência da Computação</strong> pela 
-            <span itemprop="affiliation">Universidade Federal do Ceará</span> e busco constantemente 
-            evoluir tecnicamente, com foco em <strong>arquitetura de sistemas</strong>, 
-            <strong>código limpo</strong> e <strong>soluções que gerem impacto real</strong>. 
-            Valorizo colaboração, comunicação clara e aprendizado contínuo.
+            <span data-i18n="about.p3.text1"></span>
+            <strong data-i18n="about.p3.highlight1"></strong>
+            <span data-i18n="about.p3.text2"></span>
+            <strong data-i18n="about.p3.highlight2" itemprop="affiliation"></strong>
+            <span data-i18n="about.p3.text3"></span>
+            <strong data-i18n="about.p3.highlight3"></strong>
+            <span data-i18n="about.p3.text4"></span>
           </p>
 
         </div>
@@ -796,18 +780,13 @@ content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.j
         <div class="col-12 col-lg-6 fade-up">
 
           <div class="card p-4">
-            <h3 class="text-gold">Áreas de interesse</h3>
-            <p class="mb-0">
-              Desenvolvimento Web • Arquitetura de Software • Sistemas Escaláveis • 
-              Engenharia de Software • Experiência do Usuário • Aprendizado Contínuo
-            </p>
+            <h3 class="text-gold" data-i18n="about.interests.title"></h3>
+            <p class="mb-0" data-i18n="about.interests.list"></p>
           </div>
 
           <div class="card p-4 mt-4">
-            <h3 class="text-gold">Estudando no momento</h3>
-            <p class="mb-0">
-              Vim Motions • C++ • Estrutura de Dados e Algoritmos
-            </p>
+            <h3 class="text-gold" data-i18n="about.study.title"></h3>
+            <p class="mb-0" data-i18n="about.study.list"></p>
           </div>
 
         </div>
@@ -821,8 +800,7 @@ content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.j
 <!-- FOOTER -->
 <footer class="footer text-center fade-up">
   <div class="container">
-    <address class="mb-0">
-      © 2026 Arthur Nunes • Full Stack Developer
+    <address data-i18n="footer.copyright" class="mb-0">
     </address>
   </div>
 </footer>
@@ -830,7 +808,11 @@ content="Arthur Nunes é Desenvolvedor Full Stack especializado em React, Node.j
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- SCRIPTS FUNCIONAIS -->
+<!-- Internationalization -->
+<script src="js/i18n.js" defer></script>
+<script src="js/lang-toggle.js" defer></script>
+
+<!-- SCRIPTS -->
 <script src="js/toggle-mode.js" defer></script>
 <script src="js/animations.js" defer></script>
 <script src="js/projects-filter.js" defer></script>
