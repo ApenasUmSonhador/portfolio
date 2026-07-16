@@ -107,6 +107,58 @@
       "review": "Review em vídeo"
     },
 
+    "homeExpense": {
+      "alt": "Preview do projeto Home Expense Control",
+
+      "title": "Home Expense Control Full Stack",
+
+      "description": "Aplicação completa com React, TypeScript e shadcn/ui no frontend, .NET 10, C#, ASP.NET Core, Entity Framework Core e SQLite no backend, incluindo testes automatizados e documentação interativa da API.",
+
+      "modal": {
+        "title": "Home Expense Control Full Stack — Case",
+
+        "problem": {
+          "title": "💡 Problema",
+          "text": "O controle de gastos residenciais pode se tornar confuso quando receitas, despesas e responsabilidades financeiras de diferentes pessoas não estão centralizadas. A ausência de regras claras, filtros e consolidação dos valores também dificulta a análise do saldo individual e geral."
+        },
+
+        "solution": {
+          "title": "🛠️ Solução",
+          "text1": "Foi desenvolvida uma aplicação ",
+          "highlight1": "Full Stack",
+          "text2": " com frontend desacoplado e backend estruturado como uma ",
+          "highlight2": "API REST",
+          "text3": ", permitindo cadastrar pessoas, registrar receitas e despesas, consultar totais financeiros e filtrar transações por pessoa, faixa etária, tipo e valor.",
+          "text4": "O frontend atua como uma ",
+          "highlight3": "SPA",
+          "text5": ", consumindo a API e oferecendo uma interface responsiva, enquanto o backend centraliza as regras de negócio, validações, persistência e cálculos financeiros."
+        },
+
+        "tech": {
+          "title": "🧠 Decisões Técnicas",
+
+          "highlight1": ".NET 10 e C#",
+          "text1": " no desenvolvimento da API, utilizando ASP.NET Core para construção dos endpoints e organização do backend por funcionalidades. ",
+          "highlight2": "Entity Framework Core e SQLite",
+          "text2": " para persistência dos dados, migrations controladas, relacionamentos e exclusão em cascata das transações vinculadas a uma pessoa.",
+          "highlight3": "React e TypeScript",
+          "text3": " no frontend para criação de uma interface responsiva, tipada e organizada por funcionalidades, utilizando shadcn/ui, Tailwind CSS e componentes reutilizáveis.",
+          "highlight4": "Qualidade e documentação",
+          "text4": " com testes automatizados em xUnit, respostas padronizadas com ProblemDetails, documentação OpenAPI com Scalar e integração contínua por meio do GitHub Actions."
+        },
+
+        "result": {
+          "title": "📈 Resultado",
+          "text": "O projeto resultou em uma aplicação funcional, responsiva e documentada, com regras de negócio protegidas no backend, filtros combináveis, cálculos financeiros individuais e gerais, testes automatizados e uma estrutura preparada para evolução e manutenção."
+        },
+
+        "next": {
+          "title": "🚀 Evoluções Futuras",
+          "text": "Implementação de autenticação e autorização, filtros por período e descrição, paginação, testes automatizados do frontend, observabilidade, containerização com Docker e publicação completa da aplicação em ambiente de produção."
+        }
+      }
+    },
+
     "todo": {
       "alt": "Preview do projeto To-Do List",
 
@@ -269,7 +321,7 @@
 
     "study": {
       "title": "Estudando no momento",
-      "list": "Vim Motions • C++ • Estrutura de Dados e Algoritmos"
+      "list": ".Net Core • C# • Estrutura de Dados e Algoritmos"
     }
   },
 

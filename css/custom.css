@@ -498,6 +498,59 @@ body.light .project-review-btn:hover {
   color: #ffffff;
 }
 
+.badge-dotnet {
+  background-color: #512bd4;
+  color: #ffffff;
+}
+
+.badge-csharp {
+  background-color: #68217a;
+  color: #ffffff;
+}
+
+.badge-aspnet {
+  background-color: #5c2d91;
+  color: #ffffff;
+}
+
+.badge-efcore {
+  background-color: #6b4fbb;
+  color: #ffffff;
+}
+
+.badge-sqlite {
+  background-color: #003b57;
+  color: #ffffff;
+}
+
+.badge-xunit {
+  background-color: #1f2937;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.badge-openapi {
+  background-color: #6ba539;
+  color: #ffffff;
+}
+
+.badge-scalar {
+  background-color: #111827;
+  color: #a78bfa;
+  border: 1px solid rgba(167, 139, 250, 0.4);
+}
+
+.badge-tailwind {
+  background-color: #0f172a;
+  color: #38bdf8;
+}
+
+.badge-shadcn {
+  background-color: #09090b;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
 /* ----- Light mode ajustes ----- */
 
 body.light .project-card .badge {
@@ -630,7 +683,6 @@ body.light .modal-header .btn-close {
 body.light .form-control:focus {
   box-shadow: 0 0 0 3px rgba(115, 60, 85, 0.15);
 }
-
 
 /* Footer */
 .modal-footer {
