@@ -161,6 +161,60 @@
       }
     },
 
+    "smashOrPass": {
+      "alt": "Preview of the Smash or Pass project",
+
+      "title": "Smash or Pass",
+
+      "description": "Full Stack recipe discovery platform built with React, Node.js, Express, TypeScript, Prisma, and PostgreSQL, featuring JWT authentication, content moderation, and an administrative dashboard.",
+
+      "modal": {
+        "title": "Smash or Pass — Case",
+
+        "problem": {
+          "title": "💡 Problem",
+          "text": "Recipe-sharing platforms often provide a poor discovery experience, limited content curation, and little personalization based on dietary restrictions. Additionally, collaborative platforms require robust permission management, moderation workflows, and data integrity to maintain content quality."
+        },
+
+        "solution": {
+          "title": "🛠️ Solution",
+          "text1": "A ",
+          "highlight1": "Full Stack",
+          "text2": " platform was developed around a ",
+          "highlight2": "REST API",
+          "text3": ", providing user authentication, recipe management, Smash/Pass interactions, comments, and a complete content moderation workflow.",
+          "text4": "The frontend operates as a ",
+          "highlight3": "Single Page Application (SPA)",
+          "text5": ", while the backend centralizes business rules such as RBAC, recipe approval, allergen filtering, dietary preferences, and administrative analytics."
+        },
+
+        "tech": {
+          "title": "🧠 Technical Decisions",
+
+          "highlight1": "Client-Server Architecture",
+          "text1": " with a fully decoupled frontend and backend, improving maintainability, scalability, and separation of concerns. ",
+
+          "highlight2": "TypeScript + Prisma ORM",
+          "text2": " were adopted throughout the backend to ensure strong typing, safe database access, and controlled schema migrations. ",
+
+          "highlight3": "JWT + RBAC",
+          "text3": " provide stateless authentication and role-based authorization, securing privileged operations while keeping the API scalable. ",
+
+          "highlight4": "Domain-Driven Data Modeling",
+          "text4": " with a relational model covering users, recipes, ingredients, categories, allergens, dietary preferences, comments, and swipe interactions, supported by comprehensive technical documentation including ERD, ADRs, Swagger/OpenAPI, and business rules."
+        },
+
+        "result": {
+          "title": "📈 Result",
+          "text": "The project resulted in a functional MVP showcasing a robust Full Stack architecture with authentication, authorization, content moderation, comprehensive API documentation, a well-structured relational database, and an engaging swipe-based recipe discovery experience. The application was designed to support long-term maintenance and future expansion."
+        },
+
+        "next": {
+          "title": "🚀 Future Improvements",
+          "text": "Introduce automated testing, containerized deployment, real-time notifications, AI-powered recipe recommendations, query caching, advanced search capabilities, performance optimizations, cloud-based media storage, and additional social features such as favorites, followers, and recipe collections."
+        }
+      }
+    },
 
     "todo": {
       "alt": "Preview of the Full Stack To-Do List project",

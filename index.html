@@ -617,6 +617,129 @@
         </div>
         </div>
 
+        <!-- Smash or pass -->
+        <article 
+          class="col-12 col-md-6 col-lg-4 fade-up project-item"
+          data-category="frontend backend database auth"
+        >
+          <div class="card project-card h-100">
+
+            <button class="project-image" 
+                type="button"
+                tabindex="0"
+                data-bs-toggle="modal"
+                data-bs-target="#caseSmashOrPass"
+            >
+              <img 
+                src="assets/smash-or-pass.webp"
+                data-i18n-alt="projects.smashOrPass.alt"
+                loading="lazy"
+                >
+            </button>
+
+            <div class="p-3 d-flex flex-column h-100">
+              <h3 class="text-gold" data-i18n="projects.smashOrPass.title"></h3>
+
+              <!-- TAGS -->
+              <ul class="d-flex flex-wrap gap-2 mb-3">
+                <!-- Stack Badges -->
+                <li><span class="badge badge-frontend" data-i18n="projects.filter.frontend"></span></li>
+                <li><span class="badge badge-backend" data-i18n="projects.filter.backend"></span></li>
+                <li><span class="badge badge-database" data-i18n="projects.filter.database"></span></li>
+                <li><span class="badge badge-auth" data-i18n="projects.filter.auth"></span></li>
+                <!-- Tech Badges -->
+                <li><span class="badge badge-react">React</span></li>
+                <li><span class="badge badge-ts">TypeScript</span></li>
+                <li><span class="badge badge-node">Node.js</span></li>
+                <li><span class="badge badge-express">Express</span></li>
+                <li><span class="badge badge-prisma">Prisma</span></li>
+                <li><span class="badge badge-postgres">PostgreSQL</span></li>
+                <li><span class="badge badge-jwt">JWT</span></li>
+                <li><span class="badge badge-rest">REST API</span></li>
+                <li><span class="badge badge-rbac">RBAC</span></li>
+                <li><span class="badge badge-swagger">Swagger</span></li>
+                <li><span class="badge badge-auth">Auth</span></li>
+                <li><span class="badge badge-admin">Admin Panel</span></li>
+              </ul>
+
+              <p data-i18n="projects.smashOrPass.description"></p>
+
+              <div class="mt-auto d-flex gap-2">
+                <a class="btn btn-outline-gold btn-sm disabled" data-i18n="projects.buttons.demo"></a>
+                <a 
+                  class="btn btn-outline-gold btn-sm"
+                  href="https://github.com/ArthurViniNunes/smash-or-pass"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="projects.buttons.github"
+                ></a>
+                <button class="btn btn-outline-gold btn-sm" data-bs-toggle="modal" data-bs-target="#caseSmashOrPass" data-i18n="projects.buttons.case">
+                </button>              
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Modal Smash or Pass Full Stack -->
+        <div class="modal fade" id="caseSmashOrPass" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title text-gold" data-i18n="projects.smashOrPass.modal.title"></h3>
+              <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- === Text Modal === -->
+            <div class="modal-body">
+
+              <h4 data-i18n="projects.smashOrPass.modal.problem.title"></h4>
+              <p data-i18n="projects.smashOrPass.modal.problem.text"></p>
+
+              <h4 data-i18n="projects.smashOrPass.modal.solution.title"></h4>
+              <p>
+                <span data-i18n="projects.smashOrPass.modal.solution.text1"></span>
+                <strong data-i18n="projects.smashOrPass.modal.solution.highlight1"></strong>
+                <span data-i18n="projects.smashOrPass.modal.solution.text2"></span>
+                <strong data-i18n="projects.smashOrPass.modal.solution.highlight2"></strong>
+                <span data-i18n="projects.smashOrPass.modal.solution.text3"></span>
+              </p>
+              <p>
+                <span data-i18n="projects.smashOrPass.modal.solution.text4"></span>
+                <strong data-i18n="projects.smashOrPass.modal.solution.highlight3"></strong>
+                <span data-i18n="projects.smashOrPass.modal.solution.text5"></span>
+              </p>
+
+              <h4 data-i18n="projects.smashOrPass.modal.tech.title"></h4>
+              <ul>
+                <li>
+                  <strong data-i18n="projects.smashOrPass.modal.tech.highlight1"></strong>
+                  <span data-i18n="projects.smashOrPass.modal.tech.text1"></span>
+                </li>
+                <li>
+                  <strong data-i18n="projects.smashOrPass.modal.tech.highlight2"></strong>
+                  <span data-i18n="projects.smashOrPass.modal.tech.text2"></span>
+                </li>
+                <li>
+                  <strong data-i18n="projects.smashOrPass.modal.tech.highlight3"></strong>
+                  <span data-i18n="projects.smashOrPass.modal.tech.text3"></span>
+                </li>
+                <li>
+                  <strong data-i18n="projects.smashOrPass.modal.tech.highlight4"></strong>
+                  <span data-i18n="projects.smashOrPass.modal.tech.text4"></span>
+                </li>
+              </ul>
+
+              <h4 data-i18n="projects.smashOrPass.modal.result.title"></h4>
+              <p data-i18n="projects.smashOrPass.modal.result.text"></p>
+
+              <h4 data-i18n="projects.smashOrPass.modal.next.title"></h4>
+              <p data-i18n="projects.smashOrPass.modal.next.text"></p>
+
+            </div>
+          </div>
+        </div>
+        </div>
+
         <!-- To-Do List -->
         <article 
           class="col-12 col-md-6 col-lg-4 fade-up project-item"

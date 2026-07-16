@@ -159,6 +159,61 @@
       }
     },
 
+    "smashOrPass": {
+      "alt": "Preview do projeto Smash or Pass",
+
+      "title": "Smash or Pass",
+
+      "description": "Plataforma Full Stack para descoberta de receitas através de mecânica de swipe, desenvolvida com React, Node.js, Express, TypeScript, Prisma e PostgreSQL, incluindo autenticação JWT, moderação de conteúdo e painel administrativo.",
+
+      "modal": {
+        "title": "Smash or Pass — Case",
+
+        "problem": {
+          "title": "💡 Problema",
+          "text": "Plataformas de compartilhamento de receitas costumam apresentar experiências de descoberta pouco intuitivas, baixa curadoria do conteúdo e escassez de mecanismos para personalização conforme restrições alimentares. Além disso, sistemas colaborativos exigem controle de permissões, moderação e garantia da qualidade dos dados."
+        },
+
+        "solution": {
+          "title": "🛠️ Solução",
+          "text1": "Foi desenvolvida uma plataforma ",
+          "highlight1": "Full Stack",
+          "text2": " baseada em uma ",
+          "highlight2": "API REST",
+          "text3": ", permitindo autenticação de usuários, cadastro e gerenciamento de receitas, sistema de interações Smash/Pass, comentários e moderação completa de conteúdo.",
+          "text4": "O frontend funciona como uma ",
+          "highlight3": "Single Page Application (SPA)",
+          "text5": ", enquanto o backend centraliza regras de negócio como RBAC, aprovação de receitas, filtros por alergênicos e preferências alimentares, além da disponibilização de métricas administrativas."
+        },
+
+        "tech": {
+          "title": "🧠 Decisões Técnicas",
+
+          "highlight1": "Arquitetura Cliente-Servidor",
+          "text1": " com frontend desacoplado do backend, permitindo maior organização, escalabilidade e manutenção da aplicação. ",
+
+          "highlight2": "TypeScript + Prisma ORM",
+          "text2": " utilizados em toda a camada de backend para garantir tipagem forte, segurança no acesso aos dados e migrações controladas. ",
+
+          "highlight3": "JWT + RBAC",
+          "text3": " para autenticação stateless e controle de acesso entre usuários comuns e administradores, protegendo operações sensíveis do sistema. ",
+
+          "highlight4": "Modelagem orientada ao domínio",
+          "text4": " contemplando relacionamentos complexos entre usuários, receitas, ingredientes, categorias, alergênicos, preferências alimentares, comentários e interações, acompanhada por documentação técnica completa (ERD, ADRs, Swagger e regras de negócio)."
+        },
+
+        "result": {
+          "title": "📈 Resultado",
+          "text": "O projeto resultou em um MVP funcional que demonstra uma arquitetura Full Stack robusta, com autenticação, autorização, moderação de conteúdo, documentação completa da API, modelagem relacional consistente e uma experiência de descoberta de receitas baseada em swipe. A aplicação foi estruturada para facilitar manutenção, evolução e expansão futura."
+        },
+
+        "next": {
+          "title": "🚀 Evoluções Futuras",
+          "text": "Implementação de testes automatizados, deploy containerizado, notificações em tempo real, recomendações personalizadas por IA, cache de consultas, busca avançada, otimizações de desempenho, integração com armazenamento em nuvem e novas funcionalidades sociais, como favoritos, seguidores e coleções de receitas."
+        }
+      }
+    },
+
     "todo": {
       "alt": "Preview do projeto To-Do List",
 

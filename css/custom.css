@@ -551,6 +551,41 @@ body.light .project-review-btn:hover {
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
+.badge-express {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.badge-rest {
+  background-color: #0ea5e9;
+  color: #ffffff;
+}
+
+.badge-rbac {
+  background-color: #7c3aed;
+  color: #ffffff;
+}
+
+.badge-swagger {
+  background-color: #85ea2d;
+  color: #1f2937;
+}
+
+.badge-auth {
+  background-color: #d63384;
+  color: #ffffff;
+}
+
+.badge-admin {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.badge-moderation {
+  background-color: #f59e0b;
+  color: #ffffff;
+}
+
 /* ----- Light mode ajustes ----- */
 
 body.light .project-card .badge {
