@@ -110,12 +110,12 @@
     "homeExpense": {
       "alt": "Preview do projeto Home Expense Control",
 
-      "title": "Home Expense Control Full Stack",
+      "title": "Home Expense Control",
 
       "description": "Aplicação completa com React, TypeScript e shadcn/ui no frontend, .NET 10, C#, ASP.NET Core, Entity Framework Core e SQLite no backend, incluindo testes automatizados e documentação interativa da API.",
 
       "modal": {
-        "title": "Home Expense Control Full Stack — Case",
+        "title": "Home Expense Control — Case",
 
         "problem": {
           "title": "💡 Problema",
