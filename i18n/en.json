@@ -211,7 +211,7 @@
 
         "next": {
           "title": "🚀 Future Improvements",
-          "text": "Introduce automated testing, containerized deployment, real-time notifications, AI-powered recipe recommendations, query caching, advanced search capabilities, performance optimizations, cloud-based media storage, and additional social features such as favorites, followers, and recipe collections."
+          "text": "Introduce automated testing, observability, Docker containerization, real-time notifications, AI-powered recipe recommendations, query caching, advanced search, performance optimizations, and additional social features such as favorites, followers, and recipe collections."
         }
       }
     },

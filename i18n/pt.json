@@ -209,7 +209,7 @@
 
         "next": {
           "title": "🚀 Evoluções Futuras",
-          "text": "Implementação de testes automatizados, deploy containerizado, notificações em tempo real, recomendações personalizadas por IA, cache de consultas, busca avançada, otimizações de desempenho, integração com armazenamento em nuvem e novas funcionalidades sociais, como favoritos, seguidores e coleções de receitas."
+          "text": "Implementação de testes automatizados, observabilidade, containerização com Docker, notificações em tempo real, recomendações personalizadas por IA, cache de consultas, busca avançada, otimizações de desempenho e novas funcionalidades sociais, como favoritos, seguidores e coleções de receitas."
         }
       }
     },
