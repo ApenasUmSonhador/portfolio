@@ -109,6 +109,60 @@
       "review": "Video review"
     },
 
+    "kanbanRealtime": {
+      "alt": "Kanban Realtime project preview",
+
+      "title": "Kanban Realtime",
+
+      "description": "A Full Stack collaborative task management application built with React, TypeScript, Node.js, Express, Socket.IO, Prisma ORM, and PostgreSQL, enabling multiple users to work simultaneously on shared boards in real time.",
+
+      "modal": {
+        "title": "Kanban Realtime — Case Study",
+
+        "problem": {
+          "title": "💡 Problem",
+          "text": "Traditional task management tools do not always provide real-time synchronization between users, making collaboration across distributed teams more difficult. Furthermore, maintaining data consistency during simultaneous interactions requires an architecture capable of handling concurrent events."
+        },
+
+        "solution": {
+          "title": "🛠️ Solution",
+          "text1": "A ",
+          "highlight1": "Full Stack",
+          "text2": " application was developed around a ",
+          "highlight2": "REST API integrated with Socket.IO",
+          "text3": ", enabling user authentication, workspaces, boards, lists, and cards while instantly synchronizing updates across all connected participants.",
+          "text4": "The frontend operates as a ",
+          "highlight3": "Single Page Application (SPA)",
+          "text5": ", consuming the API and maintaining a WebSocket connection to reflect card movements, list updates, and other collaborative events in real time."
+        },
+
+        "tech": {
+          "title": "🧠 Technical Decisions",
+
+          "highlight1": "Node.js, Express, and TypeScript",
+          "text1": " for the backend API, organizing the application into well-defined layers and separating responsibilities between routes, controllers, services, and data persistence.",
+          "highlight2": "Prisma ORM and PostgreSQL",
+          "text2": " for relational data modeling, migration management, and reliable persistence of users, boards, lists, cards, and permissions.",
+          "highlight3": "React, Tailwind CSS, and Socket.IO",
+          "text3": " for building a responsive, reactive interface capable of updating shared data instantly without requiring page reloads.",
+          "highlight4": "Authentication and validation",
+          "text4": " using JWT for authentication, Zod for input validation, and authorization rules to protect shared resources.",
+          "highlight5": "Architecture designed for scalability",
+          "text5": " with a modular structure prepared for activity history, invitations, advanced filtering, integration testing, CI/CD pipelines, and production deployment."
+        },
+
+        "result": {
+          "title": "📈 Results",
+          "text": "The project resulted in a collaborative platform capable of synchronizing changes between multiple users in real time, providing a scalable, strongly typed architecture designed for continuous evolution while emphasizing maintainability, code organization, and user experience."
+        },
+
+        "next": {
+          "title": "🚀 Future Improvements",
+          "text": "Implementation of full card editing, board activity history, invitations for external users, voluntary board leaving, search and filtering, assignees, priorities, due dates, HTTP and Socket.IO integration tests, a GitHub Actions CI pipeline, and complete deployment of the frontend, backend, and PostgreSQL database."
+        }
+      }
+    },
+
     "homeExpense": {
       "alt": "Preview of the Home Expense Control project",
 

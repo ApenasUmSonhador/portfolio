@@ -586,6 +586,17 @@ body.light .project-review-btn:hover {
   color: #ffffff;
 }
 
+.badge-zod {
+  background-color: #194a8e;
+  color: #ffffff;
+}
+
+.badge-socketio {
+  background-color: #ffffff;
+  color: #09090b;
+  border: 1px solid rgba(1, 1, 1, 0.25);
+}
+
 /* ----- Light mode ajustes ----- */
 
 body.light .project-card .badge {

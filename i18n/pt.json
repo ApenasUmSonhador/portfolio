@@ -107,6 +107,60 @@
       "review": "Review em vídeo"
     },
 
+    "kanbanRealtime": {
+      "alt": "Preview do projeto Kanban Realtime",
+
+      "title": "Kanban Realtime",
+
+      "description": "Aplicação Full Stack para gerenciamento colaborativo de tarefas em tempo real, desenvolvida com React, TypeScript, Node.js, Express, Socket.IO, Prisma ORM e PostgreSQL, permitindo múltiplos usuários interagirem simultaneamente em boards compartilhados.",
+
+      "modal": {
+        "title": "Kanban Realtime — Case",
+
+        "problem": {
+          "title": "💡 Problema",
+          "text": "Ferramentas tradicionais de gerenciamento de tarefas nem sempre oferecem sincronização em tempo real entre usuários, dificultando a colaboração em equipes distribuídas. Além disso, manter consistência dos dados durante movimentações simultâneas exige uma arquitetura capaz de lidar com eventos concorrentes."
+        },
+
+        "solution": {
+          "title": "🛠️ Solução",
+          "text1": "Foi desenvolvida uma aplicação ",
+          "highlight1": "Full Stack",
+          "text2": " baseada em uma ",
+          "highlight2": "API REST integrada ao Socket.IO",
+          "text3": ", permitindo autenticação de usuários, criação de workspaces, boards, listas e cards, além da sincronização instantânea das alterações entre todos os participantes conectados.",
+          "text4": "O frontend funciona como uma ",
+          "highlight3": "SPA",
+          "text5": ", consumindo a API e estabelecendo conexão WebSocket para refletir em tempo real movimentações de cards, alterações em listas e demais eventos colaborativos."
+        },
+
+        "tech": {
+          "title": "🧠 Decisões Técnicas",
+
+          "highlight1": "Node.js, Express e TypeScript",
+          "text1": " no desenvolvimento da API, organizando a aplicação em camadas e separando responsabilidades entre rotas, controllers, services e persistência.",
+          "highlight2": "Prisma ORM e PostgreSQL",
+          "text2": " para modelagem relacional, gerenciamento das migrations e persistência consistente de usuários, boards, listas, cards e permissões.",
+          "highlight3": "React, Tailwind CSS e Socket.IO",
+          "text3": " na construção de uma interface responsiva e reativa, permitindo atualização instantânea dos dados compartilhados sem necessidade de recarregar a aplicação.",
+          "highlight4": "Autenticação e validação",
+          "text4": " utilizando JWT para autenticação, Zod para validação dos dados de entrada e regras de autorização para proteger recursos compartilhados.",
+          "highlight5": "Arquitetura preparada para evolução",
+          "text5": " com estrutura modular voltada à implementação de histórico de atividades, convites, filtros avançados, testes de integração, CI/CD e deploy em ambiente de produção."
+        },
+
+        "result": {
+          "title": "📈 Resultado",
+          "text": "O projeto resultou em uma plataforma colaborativa capaz de sincronizar alterações entre múltiplos usuários em tempo real, oferecendo uma arquitetura escalável, tipada e preparada para novas funcionalidades, priorizando organização do código, experiência do usuário e manutenção contínua."
+        },
+
+        "next": {
+          "title": "🚀 Evoluções Futuras",
+          "text": "Implementação de edição completa de cards, histórico de atividades, saída voluntária de boards, busca e filtros, responsáveis, prioridades e datas de entrega, pipeline de CI com GitHub Actions e deploy completo do frontend, backend e PostgreSQL."
+        }
+      }
+    },
+
     "homeExpense": {
       "alt": "Preview do projeto Home Expense Control",
 
