@@ -107,6 +107,64 @@
       "review": "Review em vídeo"
     },
 
+    "plateia": {
+      "alt": "Preview da plataforma Plateia Ingressos",
+
+      "title": "Plateia Ingressos",
+
+      "description": "Plataforma Full Stack para criação, publicação e venda simulada de ingressos, desenvolvida com React, TypeScript, Material UI, Node.js, Express, Prisma ORM e PostgreSQL, com reservas concorrentes, bloqueio temporário de assentos, emissão de ingressos com QR Code e validação na portaria.",
+
+      "modal": {
+        "title": "Plateia Ingressos — Case Full Stack",
+
+        "problem": {
+          "title": "💡 Problema",
+          "text": "Plataformas de eventos precisam coordenar diferentes jornadas — organizadores, clientes e portaria — sem permitir que duas pessoas reservem o mesmo assento. Além da gestão do evento, a solução precisava controlar reservas temporárias, pagamentos simulados, emissão de ingressos e validação antifraude, mantendo consistência mesmo diante de operações concorrentes."
+        },
+
+        "solution": {
+          "title": "🛠️ Solução",
+          "text1": "Foi desenvolvida uma plataforma ",
+          "highlight1": "Full Stack",
+          "text2": " baseada em uma ",
+          "highlight2": "API REST com regras transacionais",
+          "text3": ", permitindo cadastro e autenticação, integração com o catálogo da Ticketmaster, criação e publicação de eventos, configuração de fileiras e assentos, reservas temporárias e pagamentos simulados.",
+          "text4": "O frontend funciona como uma ",
+          "highlight3": "SPA responsiva",
+          "text5": ", oferecendo jornadas específicas para clientes, organizadores e portaria, incluindo seleção de assentos, acompanhamento de disponibilidade, emissão de ingressos com QR Code e validação de entrada."
+        },
+
+        "tech": {
+          "title": "🧠 Decisões Técnicas",
+
+          "highlight1": "Node.js, Express e TypeScript",
+          "text1": " na construção de uma API modular, tipada e organizada por domínios como autenticação, catálogo, eventos, reservas, pagamentos, ingressos e portaria.",
+
+          "highlight2": "Prisma ORM e PostgreSQL",
+          "text2": " para modelagem relacional, migrations, transações e restrições de unicidade, garantindo que apenas uma reserva concorrente possa bloquear determinado assento.",
+
+          "highlight3": "React, Material UI e React Router",
+          "text3": " na implementação da SPA, com navegação baseada em papéis, mapa de assentos, checkout, consulta de ingressos e leitura de QR Code pela câmera.",
+
+          "highlight4": "JWT, bcrypt e Zod",
+          "text4": " para autenticação stateless, proteção de senhas, autorização por papéis e validação dos contratos de entrada, saída e integração externa.",
+
+          "highlight5": "TDD, ADRs e CI/CD",
+          "text5": " com Vitest, React Testing Library, Supertest, banco PostgreSQL exclusivo para testes, decisões arquiteturais documentadas, Docker Compose, GitHub Actions e deploy contínuo na Vercel e no Render."
+        },
+
+        "result": {
+          "title": "📈 Resultado",
+          "text": "O projeto resultou em um MVP funcional e publicado, cobrindo o ciclo completo de eventos: pesquisa no catálogo, criação e publicação, reserva de até quatro assentos por dez minutos, pagamento simulado, emissão de ingressos, compartilhamento por link e validação na portaria. A solução protege operações concorrentes no banco de dados e atualiza visualmente a disponibilidade dos assentos para diferentes usuários."
+        },
+
+        "next": {
+          "title": "🚀 Evoluções Futuras",
+          "text": "Evolução do design system e da identidade visual, maior componentização do frontend, refinamento dos fluxos e feedbacks de erro, testes ponta a ponta, recuperação de senha, notificações por e-mail, pagamentos reais, estornos, diferentes setores e preços, observabilidade, refresh token e atualização de disponibilidade em tempo real por WebSocket ou Server-Sent Events."
+        }
+      }
+    },
+
     "kanbanRealtime": {
       "alt": "Preview do projeto Kanban Realtime",
 

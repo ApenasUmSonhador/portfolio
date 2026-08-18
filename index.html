@@ -493,6 +493,167 @@
       </div>
 
       <div class="row g-4">
+        <!-- Plateia -->
+        <article
+          class="col-12 col-md-6 col-lg-4 fade-up project-item"
+          data-category="frontend backend database"
+        >
+          <div class="card project-card h-90">
+
+            <button
+              class="project-image"
+              type="button"
+              tabindex="0"
+              data-bs-toggle="modal"
+              data-bs-target="#casePlateia"
+            >
+              <img
+                src="assets/plateia.webp"
+                data-i18n-alt="projects.plateia.alt"
+                loading="lazy"
+              >
+            </button>
+
+            <div class="p-3 d-flex flex-column h-100">
+
+              <h3 class="text-gold" data-i18n="projects.plateia.title"></h3>
+
+              <!-- TAGS -->
+              <ul class="d-flex flex-wrap gap-2 mb-3">
+
+                <!-- Categoria -->
+                <li><span class="badge badge-frontend" data-i18n="projects.filter.frontend"></span></li>
+                <li><span class="badge badge-backend" data-i18n="projects.filter.backend"></span></li>
+                <li><span class="badge badge-database" data-i18n="projects.filter.database"></span></li>
+
+                <!-- Tecnologias -->
+                <li><span class="badge badge-react">React</span></li>
+                <li><span class="badge badge-ts">TypeScript</span></li>
+                <li><span class="badge badge-vite">Vite</span></li>
+                <li><span class="badge badge-mui">Material UI</span></li>
+                <li><span class="badge badge-node">Node.js</span></li>
+                <li><span class="badge badge-express">Express.js</span></li>
+                <li><span class="badge badge-prisma">Prisma ORM</span></li>
+                <li><span class="badge badge-postgres">PostgreSQL</span></li>
+                <li><span class="badge badge-jwt">JWT</span></li>
+                <li><span class="badge badge-zod">Zod</span></li>
+                <li><span class="badge badge-vitest">Vitest</span></li>
+                <li><span class="badge badge-docker">Docker</span></li>
+                <li><span class="badge badge-github">GitHub Actions</span></li>
+              </ul>
+
+              <p data-i18n="projects.plateia.description"></p>
+
+              <div class="mt-auto d-flex gap-2">
+                <a class="btn btn-outline-gold btn-sm"
+                  data-i18n="projects.buttons.demo"
+                  href="https://plateia-ingressos.vercel.app"
+                  target="_blank">
+                </a>
+
+                <a
+                  class="btn btn-outline-gold btn-sm"
+                  href="https://github.com/ArthurViniNunes/plateia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="projects.buttons.github"
+                ></a>
+
+                <button
+                  class="btn btn-outline-gold btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#casePlateia"
+                  data-i18n="projects.buttons.case">
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+        <!-- Modal Plateia -->
+        <div class="modal fade" id="casePlateia" tabindex="-1">
+          <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h3 class="modal-title text-gold"
+                    data-i18n="projects.plateia.modal.title">
+                </h3>
+
+                <button
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close">
+                </button>
+              </div>
+
+              <div class="modal-body">
+
+                <h4 data-i18n="projects.plateia.modal.problem.title"></h4>
+                <p data-i18n="projects.plateia.modal.problem.text"></p>
+
+                <h4 data-i18n="projects.plateia.modal.solution.title"></h4>
+
+                <p>
+                  <span data-i18n="projects.plateia.modal.solution.text1"></span>
+                  <strong data-i18n="projects.plateia.modal.solution.highlight1"></strong>
+                  <span data-i18n="projects.plateia.modal.solution.text2"></span>
+                  <strong data-i18n="projects.plateia.modal.solution.highlight2"></strong>
+                  <span data-i18n="projects.plateia.modal.solution.text3"></span>
+                </p>
+
+                <p>
+                  <span data-i18n="projects.plateia.modal.solution.text4"></span>
+                  <strong data-i18n="projects.plateia.modal.solution.highlight3"></strong>
+                  <span data-i18n="projects.plateia.modal.solution.text5"></span>
+                </p>
+
+                <h4 data-i18n="projects.plateia.modal.tech.title"></h4>
+
+                <ul>
+
+                  <li>
+                    <strong data-i18n="projects.plateia.modal.tech.highlight1"></strong>
+                    <span data-i18n="projects.plateia.modal.tech.text1"></span>
+                  </li>
+
+                  <li>
+                    <strong data-i18n="projects.plateia.modal.tech.highlight2"></strong>
+                    <span data-i18n="projects.plateia.modal.tech.text2"></span>
+                  </li>
+
+                  <li>
+                    <strong data-i18n="projects.plateia.modal.tech.highlight3"></strong>
+                    <span data-i18n="projects.plateia.modal.tech.text3"></span>
+                  </li>
+
+                  <li>
+                    <strong data-i18n="projects.plateia.modal.tech.highlight4"></strong>
+                    <span data-i18n="projects.plateia.modal.tech.text4"></span>
+                  </li>
+
+                  <li>
+                    <strong data-i18n="projects.plateia.modal.tech.highlight5"></strong>
+                    <span data-i18n="projects.plateia.modal.tech.text5"></span>
+                  </li>
+
+                </ul>
+
+                <h4 data-i18n="projects.plateia.modal.result.title"></h4>
+                <p data-i18n="projects.plateia.modal.result.text"></p>
+
+                <h4 data-i18n="projects.plateia.modal.next.title"></h4>
+                <p data-i18n="projects.plateia.modal.next.text"></p>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
         <!-- Kanban Realtime -->
         <article
           class="col-12 col-md-6 col-lg-4 fade-up project-item"
@@ -539,6 +700,9 @@
                 <li><span class="badge badge-swagger">Swagger</span></li>
                 <li><span class="badge badge-openapi">OpenAPI</span></li>
                 <li><span class="badge badge-tailwind">Tailwind CSS</span></li>
+                <li><span class="badge badge-vite">Vite</span></li>
+                <li><span class="badge badge-github">GitHub Actions</span></li>
+
               </ul>
 
               <p data-i18n="projects.kanbanRealtime.description"></p>
@@ -694,6 +858,7 @@
                 <li><span class="badge badge-scalar">Scalar</span></li>
                 <li><span class="badge badge-tailwind">Tailwind CSS</span></li>
                 <li><span class="badge badge-shadcn">shadcn/ui</span></li>
+                <li><span class="badge badge-github">GitHub Actions</span></li>
               </ul>
 
               <p data-i18n="projects.homeExpense.description"></p>
@@ -809,7 +974,7 @@
                 <li><span class="badge badge-ts">TypeScript</span></li>
                 <li><span class="badge badge-node">Node.js</span></li>
                 <li><span class="badge badge-express">Express</span></li>
-                <li><span class="badge badge-prisma">Prisma</span></li>
+                <li><span class="badge badge-prisma">Prisma ORM</span></li>
                 <li><span class="badge badge-postgres">PostgreSQL</span></li>
                 <li><span class="badge badge-jwt">JWT</span></li>
                 <li><span class="badge badge-zod">Zod</span></li>
@@ -934,8 +1099,9 @@
                 <li><span class="badge badge-react">React</span></li>
                 <li><span class="badge badge-ts">TypeScript</span></li>
                 <li><span class="badge badge-node">Node.js</span></li>
-                <li><span class="badge badge-prisma">Prisma</span></li>
+                <li><span class="badge badge-prisma">Prisma ORM</span></li>
                 <li><span class="badge badge-postgres">PostgreSQL</span></li>
+                <li><span class="badge badge-mui">Material UI</span></li>
                 <li><span class="badge badge-jwt">JWT</span></li>
                 <li><span class="badge badge-html">HTML</span></li>
                 <li><span class="badge badge-css">CSS</span></li>

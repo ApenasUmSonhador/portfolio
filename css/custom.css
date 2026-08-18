@@ -597,6 +597,36 @@ body.light .project-review-btn:hover {
   border: 1px solid rgba(1, 1, 1, 0.25);
 }
 
+.badge-docker {
+  background-color: #2496ed;
+  color: #ffffff;
+  border: 1px solid rgba(36, 150, 237, 0.5);
+}
+
+.badge-vite {
+  background-color: #646cff;
+  color: #ffffff;
+  border: 1px solid rgba(100, 108, 255, 0.5);
+}
+
+.badge-mui {
+  background-color: #007fff;
+  color: #ffffff;
+  border: 1px solid rgba(0, 127, 255, 0.5);
+}
+
+.badge-vitest {
+  background-color: #7c3aed;
+  color: #f8fafc;
+  border: 1px solid rgba(124, 58, 237, 0.5);
+}
+
+.badge-github {
+  background-color: #24292f;
+  color: #ffffff;
+  border: 1px solid rgba(36, 41, 47, 0.5);
+}
+
 /* ----- Light mode ajustes ----- */
 
 body.light .project-card .badge {

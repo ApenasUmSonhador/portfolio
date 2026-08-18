@@ -109,6 +109,64 @@
       "review": "Video review"
     },
 
+     "plateia": {
+      "alt": "Preview of the Plateia Ingressos platform",
+
+      "title": "Plateia Ingressos",
+
+      "description": "A full-stack platform for creating, publishing, and simulating ticket sales, built with React, TypeScript, Material UI, Node.js, Express, Prisma ORM, and PostgreSQL. It features concurrency-safe reservations, temporary seat locking, QR Code ticket issuance, and gate validation.",
+
+      "modal": {
+        "title": "Plateia Ingressos — Full-Stack Case Study",
+
+        "problem": {
+          "title": "💡 Problem",
+          "text": "Event platforms must coordinate different user journeys — organizers, customers, and gate staff — while preventing two people from reserving the same seat. In addition to event management, the solution needed to handle temporary reservations, simulated payments, ticket issuance, and anti-fraud validation while preserving data consistency under concurrent operations."
+        },
+
+        "solution": {
+          "title": "🛠️ Solution",
+          "text1": "A ",
+          "highlight1": "full-stack platform",
+          "text2": " was developed around a ",
+          "highlight2": "REST API with transactional business rules",
+          "text3": ", supporting registration and authentication, Ticketmaster catalog integration, event creation and publishing, row and seat configuration, temporary reservations, and simulated payments.",
+          "text4": "The frontend operates as a ",
+          "highlight3": "responsive SPA",
+          "text5": ", providing dedicated journeys for customers, organizers, and gate staff, including seat selection, availability tracking, QR Code ticket issuance, and admission validation."
+        },
+
+        "tech": {
+          "title": "🧠 Technical Decisions",
+
+          "highlight1": "Node.js, Express, and TypeScript",
+          "text1": " were used to build a modular, type-safe API organized into domains such as authentication, catalog, events, reservations, payments, tickets, and gate validation.",
+
+          "highlight2": "Prisma ORM and PostgreSQL",
+          "text2": " were used for relational modeling, migrations, transactions, and uniqueness constraints, ensuring that only one concurrent reservation can lock a given seat.",
+
+          "highlight3": "React, Material UI, and React Router",
+          "text3": " were used to implement the SPA, featuring role-based navigation, an interactive seat map, checkout, ticket management, and camera-based QR Code scanning.",
+
+          "highlight4": "JWT, bcrypt, and Zod",
+          "text4": " were used for stateless authentication, password protection, role-based authorization, and validation of input, output, and external integration contracts.",
+
+          "highlight5": "TDD, ADRs, and CI/CD",
+          "text5": " were adopted with Vitest, React Testing Library, Supertest, a dedicated PostgreSQL test database, documented architectural decisions, Docker Compose, GitHub Actions, and continuous deployment to Vercel and Render."
+        },
+
+        "result": {
+          "title": "📈 Result",
+          "text": "The project delivered a functional, publicly deployed MVP covering the complete event lifecycle: catalog search, event creation and publishing, reservations of up to four seats for ten minutes, simulated payments, ticket issuance, public link sharing, and gate validation. The solution protects concurrent database operations and visually synchronizes seat availability across different users."
+        },
+
+        "next": {
+          "title": "🚀 Future Improvements",
+          "text": "Future improvements include evolving the design system and visual identity, increasing frontend componentization, refining user flows and error feedback, adding end-to-end tests, password recovery, email notifications, real payments and refunds, multiple seating sections and price tiers, observability, refresh tokens, and real-time availability updates through WebSocket or Server-Sent Events."
+        }
+      }
+    },
+
     "kanbanRealtime": {
       "alt": "Kanban Realtime project preview",
 
